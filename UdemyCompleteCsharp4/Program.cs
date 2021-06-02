@@ -44,6 +44,8 @@ namespace UdemyCompleteCsharp4
                 Console.WriteLine("Loading");
                 j--;
             }
+            PrintHi();
+            PrintMessage("Hello World!");
 
             //single line comment
             /*
@@ -54,6 +56,17 @@ namespace UdemyCompleteCsharp4
             ///<summary>
             ///XML documentation comment
             ///</summary>
+        }
+
+        //needs to be static in order to call it inside the static main method
+        static void PrintHi()
+        {
+            Console.WriteLine("Hi");
+        }
+
+        static void PrintMessage(string message)
+        {
+            Console.WriteLine(message);
         }
     }
 }
