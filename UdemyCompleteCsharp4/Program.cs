@@ -69,10 +69,12 @@ namespace UdemyCompleteCsharp4
             Console.WriteLine(message);
         }
 
-        /*Errors
+        /*Errors 
          * 1. Syntax errors - typed something wrong
          * 2. Logic errors - code runs but does something unexpected
          * 3. Runtime errors - happens while program is running
+         * 
+         * Debugging - process of fixing errors
          */
     }
 }
