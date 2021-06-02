@@ -38,14 +38,22 @@ namespace UdemyCompleteCsharp4
             }
 
             //while loop
-            int j = 3;
+            int j = 3;  
             while (j > 0)
             {
                 Console.WriteLine("Loading");
                 j--;
             }
 
-
+            //single line comment
+            /*
+             * multi
+             * line
+             * comment
+             */
+            ///<summary>
+            ///XML documentation comment
+            ///</summary>
         }
     }
 }
