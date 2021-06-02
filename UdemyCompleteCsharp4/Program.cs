@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace UdemyCompleteCsharp4
 {
@@ -28,6 +29,23 @@ namespace UdemyCompleteCsharp4
                 x = 66;
             }
             Console.WriteLine(x); //if complete true, prints 66. otherwise prints 5 (original value of x)
+
+            //for loop
+            List<string> collection = new List<string>() { "a", "b", "c" };
+            for (int i=0; i<collection.Count; i++)
+            {
+                Console.WriteLine(collection[i]);
+            }
+
+            //while loop
+            int j = 3;
+            while (j > 0)
+            {
+                Console.WriteLine("Loading");
+                j--;
+            }
+
+
         }
     }
 }
