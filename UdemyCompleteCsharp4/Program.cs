@@ -16,11 +16,11 @@ namespace UdemyCompleteCsharp4
             string strX = "Hello World!";
             char charX = 'a';
             bool boolX = false;
-            System.Diagnostics.Debug.WriteLine(x);
-            System.Diagnostics.Debug.WriteLine(y);
-            System.Diagnostics.Debug.WriteLine(strX);
-            System.Diagnostics.Debug.WriteLine(charX);
-            System.Diagnostics.Debug.WriteLine(boolX);
+            Console.WriteLine(x);
+            Console.WriteLine(y);
+            Console.WriteLine(strX);
+            Console.WriteLine(charX);
+            Console.WriteLine(boolX);
         }
     }
 }
