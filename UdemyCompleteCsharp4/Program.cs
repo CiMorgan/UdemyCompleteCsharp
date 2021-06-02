@@ -21,6 +21,13 @@ namespace UdemyCompleteCsharp4
             Console.WriteLine(strX);
             Console.WriteLine(charX);
             Console.WriteLine(boolX);
+
+            bool complete = false;
+            if (complete)
+            {
+                x = 66;
+            }
+            Console.WriteLine(x); //if complete true, prints 66. otherwise prints 5 (original value of x)
         }
     }
 }
