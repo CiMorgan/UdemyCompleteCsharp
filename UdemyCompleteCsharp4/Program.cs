@@ -76,5 +76,7 @@ namespace UdemyCompleteCsharp4
          * 
          * Debugging - process of fixing errors
          */
+
+        //Syntax
     }
 }
