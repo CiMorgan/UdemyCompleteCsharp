@@ -46,7 +46,7 @@ namespace UdemyCompleteCsharp4
             }
             PrintHi();
             PrintMessage("Hello World!");
-
+            PrintDay();
             //single line comment
             /*
              * multi
@@ -77,6 +77,14 @@ namespace UdemyCompleteCsharp4
          * Debugging - process of fixing errors
          */
 
-        //Syntax
+        //I don't have anything to update. Just wanted to keep my daily coding streak going.
+        static void PrintDay()
+        {
+            for (int i=1; i<6; i++)
+            {
+                Console.WriteLine("Day: " + i);
+            }
+        }
+       
     }
 }
