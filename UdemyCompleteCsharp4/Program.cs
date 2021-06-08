@@ -72,6 +72,7 @@ namespace UdemyCompleteCsharp4
             ///<summary>
             ///XML documentation comment
             ///</summary>
+            //Syntax - rules for how you format the code you type
         }
 
         //needs to be static in order to call it inside the static main method
@@ -88,7 +89,7 @@ namespace UdemyCompleteCsharp4
         public class Ex2 : Ex1 { }  //any Ex2 object is an Ex1 object (inheritance)
 
 
-        //Syntax - rules for how you format the code you type
+
         
        
     }
