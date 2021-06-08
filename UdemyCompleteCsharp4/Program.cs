@@ -51,6 +51,12 @@ namespace UdemyCompleteCsharp4
             PrintMessage("Hello World!");
             //Modulus (%)- remainder of division
             Console.WriteLine(5%4);
+            //increment and decrement operator
+            int number = 66;
+            number++;
+            Console.WriteLine(number);
+            number--;
+            Console.WriteLine(number);
             //single line comment
             /*
              * multi
