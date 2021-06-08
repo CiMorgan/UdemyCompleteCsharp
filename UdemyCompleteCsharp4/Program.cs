@@ -57,6 +57,12 @@ namespace UdemyCompleteCsharp4
             Console.WriteLine(number);
             number--;
             Console.WriteLine(number);
+            bool b = "abc" is string;
+            Console.WriteLine(b);
+            Ex2 ex2object = new Ex2();
+            bool c = ex2object is Ex1;
+            Console.WriteLine(c);
+
             //single line comment
             /*
              * multi
@@ -78,6 +84,9 @@ namespace UdemyCompleteCsharp4
         {
             Console.WriteLine(message);
         }
+        public class Ex1 { }
+        public class Ex2 : Ex1 { }  //any Ex2 object is an Ex1 object (inheritance)
+
 
         //Syntax - rules for how you format the code you type
         
