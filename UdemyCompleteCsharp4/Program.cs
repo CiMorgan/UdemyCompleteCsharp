@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 
+//namespaces used to avoid name conflicts
+//using statements import namespaces
 namespace UdemyCompleteCsharp4
 {
+    //C# code goes inside classes
     class Program
     {
         //static void Main()   //Main method - where C# programs start
@@ -69,13 +72,7 @@ namespace UdemyCompleteCsharp4
             Console.WriteLine(message);
         }
 
-        /*Errors 
-         * 1. Syntax errors - typed something wrong
-         * 2. Logic errors - code runs but does something unexpected
-         * 3. Runtime errors - happens while program is running
-         * 
-         * Debugging - process of fixing errors
-         */
+        //Syntax - rules for how you format the code you type
 
        
     }
