@@ -49,7 +49,8 @@ namespace UdemyCompleteCsharp4
             }
             PrintHi();
             PrintMessage("Hello World!");
-            PrintDay();
+            //Modulus (%)- remainder of division
+            Console.WriteLine(5%4);
             //single line comment
             /*
              * multi
@@ -73,7 +74,7 @@ namespace UdemyCompleteCsharp4
         }
 
         //Syntax - rules for how you format the code you type
-
+        
        
     }
 }
