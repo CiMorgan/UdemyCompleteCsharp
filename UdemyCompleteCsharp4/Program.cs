@@ -62,6 +62,11 @@ namespace UdemyCompleteCsharp4
             Ex2 ex2object = new Ex2();
             bool c = ex2object is Ex1;
             Console.WriteLine(c);
+            string s1 = "abc";
+            object obj1 = s1;
+            string s2 = obj1 as string;  //use as operator to cast obj1 to string
+            Console.WriteLine(s2 is string);
+
 
             //single line comment
             /*
@@ -87,6 +92,9 @@ namespace UdemyCompleteCsharp4
         }
         public class Ex1 { }
         public class Ex2 : Ex1 { }  //any Ex2 object is an Ex1 object (inheritance)
+
+
+
 
 
 
