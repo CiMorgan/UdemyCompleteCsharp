@@ -75,6 +75,10 @@ namespace UdemyCompleteCsharp4
             object obj2 = "here";
             object obj3 = obj2 ?? new object();
             Console.WriteLine(obj3);
+            Console.WriteLine(sizeof(char));
+            Console.WriteLine(sizeof(int));
+            Console.WriteLine(sizeof(decimal));
+            Console.WriteLine(sizeof(bool));
 
 
             //single line comment
