@@ -71,6 +71,10 @@ namespace UdemyCompleteCsharp4
             int yy = 23;
             var answer = xx > yy ? "x is bigger" : "y is bigger";
             Console.WriteLine(answer);
+            //null-collascing operator (??)
+            object obj2 = "here";
+            object obj3 = obj2 ?? new object();
+            Console.WriteLine(obj3);
 
 
             //single line comment
