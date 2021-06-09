@@ -85,6 +85,11 @@ namespace UdemyCompleteCsharp4
             Console.WriteLine(typeof(char));
             Console.WriteLine(typeof(bool));
             Console.WriteLine(typeof(string));
+            //overload + operator
+            Box box1 = new Box(2, 2, 2);
+            Box box2 = new Box(2, 2, 2);
+            Box box3 = box1 + box2;
+            Console.WriteLine(box3.GetLength()*box3.GetWidth()*box3.GetHeight());
           
 
 
@@ -113,6 +118,39 @@ namespace UdemyCompleteCsharp4
         }
         public class Ex1 { }
         public class Ex2 : Ex1 { }  //any Ex2 object is an Ex1 object (inheritance)
+
+        public class Box
+        {
+            private int length;
+            private int width;
+            private int height;
+
+            public Box(int length, int width, int height)
+            {
+                this.length = length; //"this" keyword - referencing class member variables 
+                this.width = width;
+                this.height = height;
+            }
+
+            public int GetLength()
+            {
+                return length;
+            }
+            public int GetWidth()
+            {
+                return width;
+            }
+            public int GetHeight()
+            {
+                return height;
+            }
+            public static Box operator +(Box box1, Box box2)
+            {
+                return new Box(box1.GetLength() + box2.GetLength(),
+                               box1.GetWidth() + box2.GetWidth(),
+                               box1.GetHeight() + box2.GetHeight());
+            }
+        }
 
 
 
