@@ -66,6 +66,11 @@ namespace UdemyCompleteCsharp4
             object obj1 = s1;
             string s2 = obj1 as string;  //use as operator to cast obj1 to string
             Console.WriteLine(s2 is string);
+            //ternary operator
+            int xx = 17;
+            int yy = 23;
+            var answer = xx > yy ? "x is bigger" : "y is bigger";
+            Console.WriteLine(answer);
 
 
             //single line comment
