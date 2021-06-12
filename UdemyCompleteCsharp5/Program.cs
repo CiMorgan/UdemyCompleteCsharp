@@ -26,7 +26,19 @@ namespace UdemyCompleteCsharp5
 
             //convert float to int - computer ignores anything after decimal
             Console.WriteLine((int)5.99f);  //comes out as 5
-
+            //Math Class
+            Console.WriteLine(Math.Abs(-3));
+            Console.WriteLine(Math.Abs(-4.66f));
+            Console.WriteLine(Math.Round(-2.7f));
+            Console.WriteLine(Math.Round(2.2f));
+            Console.WriteLine(Math.Ceiling(-2.7f));
+            Console.WriteLine(Math.Ceiling(2.2f));
+            Console.WriteLine(Math.Floor(-2.7f));
+            Console.WriteLine(Math.Floor(2.2f));
+            Console.WriteLine(Math.Truncate(-2.7f));
+            Console.WriteLine(Math.Truncate(2.2f));
+            Console.WriteLine(Math.Min(-1,5));
+            Console.WriteLine(Math.Max(-1, 5));
         }
     }
 }
