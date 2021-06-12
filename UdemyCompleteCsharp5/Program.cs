@@ -24,6 +24,8 @@ namespace UdemyCompleteCsharp5
             Console.WriteLine(5.5f+1.0f);
             Console.WriteLine(10.0f/3.0f);
 
+            //convert float to int - computer ignores anything after decimal
+            Console.WriteLine((int)5.99f);  //comes out as 5
 
         }
     }
