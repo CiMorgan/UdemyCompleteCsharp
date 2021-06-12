@@ -48,6 +48,16 @@ namespace UdemyCompleteCsharp5
             string s2 = "World!";
             string s3 = s1 + " " + s2;
             Console.WriteLine(s3);
+
+            //strings stored as array of char
+            string s4= "abc";
+            //System.Char[] s5= new System.Char[]{'a','b','c'};
+            //"add to s4 - get new array of char
+            s4 += "d";
+            //System.Char[] s6= new System.Char[]{'a','b','c,'d'};
+            Console.WriteLine(s4);
+
+
         }
     }
 }
