@@ -56,6 +56,11 @@ namespace UdemyCompleteCsharp5
             s4 += "d";
             //System.Char[] s6= new System.Char[]{'a','b','c,'d'};
             Console.WriteLine(s4);
+            string s6 = "abcd";
+            Console.WriteLine(s4 == s6);
+            Console.WriteLine(s3 == s6);
+            Console.WriteLine(string.Equals(s4, s6));
+            Console.WriteLine(string.Equals(s3, s6));
 
 
         }
