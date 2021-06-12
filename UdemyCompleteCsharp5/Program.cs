@@ -39,6 +39,15 @@ namespace UdemyCompleteCsharp5
             Console.WriteLine(Math.Truncate(2.2f));
             Console.WriteLine(Math.Min(-1,5));
             Console.WriteLine(Math.Max(-1, 5));
+
+            //strings
+            string s1 = "Hello";
+            string emptyString = "";
+            string emptyString2 = string.Empty;
+            //strings are immutable - don't modify original string - return a new string
+            string s2 = "World!";
+            string s3 = s1 + " " + s2;
+            Console.WriteLine(s3);
         }
     }
 }
