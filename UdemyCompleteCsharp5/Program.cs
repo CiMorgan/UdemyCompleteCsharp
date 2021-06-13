@@ -40,7 +40,7 @@ namespace UdemyCompleteCsharp5
             Console.WriteLine(Math.Min(-1,5));
             Console.WriteLine(Math.Max(-1, 5));
 
-            //strings
+            //strings and such
             string s1 = "Hello";
             string emptyString = "";
             string emptyString2 = string.Empty;
