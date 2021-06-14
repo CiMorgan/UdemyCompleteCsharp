@@ -73,7 +73,10 @@ namespace UdemyCompleteCsharp5
             string example = "He is the greatest of all times";
             Console.WriteLine(example.Substring(3)); //index of start of substraing
             Console.WriteLine(example.Substring(3,2));  //index of start and length of substring
-
+            Console.WriteLine("Bobby said \"Go write some code!\"");
+            Console.WriteLine("a\\b");//escape sequence for backslash
+            //Console.WriteLine("This beeps. \a"); //the \a makes it beeps - alert escape sequence
+            Console.WriteLine("Hello \t World!");
         }
     }
 }
