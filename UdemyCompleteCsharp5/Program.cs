@@ -68,7 +68,11 @@ namespace UdemyCompleteCsharp5
             Console.WriteLine(newIf);
             string name = "Cindy";
             Console.WriteLine($"My name is {name}.");
-
+            Console.WriteLine(name.Contains("in"));  //Contains method searches for substring within a string - returns bool
+            Console.WriteLine(name.Contains("hope"));
+            string example = "He is the greatest of all times";
+            Console.WriteLine(example.Substring(3)); //index of start of substraing
+            Console.WriteLine(example.Substring(3,2));  //index of start and length of substring
 
         }
     }
