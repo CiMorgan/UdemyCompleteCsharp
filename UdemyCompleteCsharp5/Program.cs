@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace UdemyCompleteCsharp5
 {
@@ -83,6 +84,20 @@ namespace UdemyCompleteCsharp5
             float percent = 0.5f;
             Console.WriteLine(string.Format("The task is {0:P} complete.", percent));
 
+            //StringBuilder class need using System.Text
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.Append("Hello World, part 2");
+            for (int t=0; t<4; t++)
+            {
+                stringBuilder.Append(", and again");
+            }
+            stringBuilder.Append("!");
+            string s = stringBuilder.ToString();
+            Console.WriteLine(s);
+            stringBuilder.Clear();
+            s = stringBuilder.ToString();
+            Console.WriteLine(s);
+            Console.WriteLine("break");
         }
     }
 }
