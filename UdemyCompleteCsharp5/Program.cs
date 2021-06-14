@@ -62,6 +62,13 @@ namespace UdemyCompleteCsharp5
             Console.WriteLine(string.Equals(s4, s6));
             Console.WriteLine(string.Equals(s3, s6));
 
+            string @if = "Hello \n world";   //the \n is the newline character  @is the verbatum identifier so keyword can be used as a variable
+            Console.WriteLine(@if);
+            string newIf = @"Hello \n world";  //here @ is used so string is interpreted literally
+            Console.WriteLine(newIf);
+            string name = "Cindy";
+            Console.WriteLine($"My name is {name}.");
+
 
         }
     }
