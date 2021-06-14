@@ -77,6 +77,12 @@ namespace UdemyCompleteCsharp5
             Console.WriteLine("a\\b");//escape sequence for backslash
             //Console.WriteLine("This beeps. \a"); //the \a makes it beeps - alert escape sequence
             Console.WriteLine("Hello \t World!");
+            int price1 = 100;
+            int price2 = 50;
+            Console.WriteLine(string.Format("Item 1 costs {0:c} and item 2 costs {1:C} ", price1, price2));
+            float percent = 0.5f;
+            Console.WriteLine(string.Format("The task is {0:P} complete.", percent));
+
         }
     }
 }
