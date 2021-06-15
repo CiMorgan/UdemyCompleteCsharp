@@ -116,6 +116,9 @@ namespace UdemyCompleteCsharp5
             Console.WriteLine(string.IsNullOrEmpty(str5) + " Should be true");
             Console.WriteLine(string.IsNullOrEmpty(str6) + " Should be true");
             Console.WriteLine(string.IsNullOrEmpty(str7) + " Should be false");
+            //by default booleans can not be null; set as bool?
+            bool? nullBool=null;
+            Console.WriteLine(nullBool+"anything");
 
         }
     }
