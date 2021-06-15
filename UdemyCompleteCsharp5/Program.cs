@@ -139,6 +139,21 @@ namespace UdemyCompleteCsharp5
             else
                 Console.WriteLine("3 is not in list");
 
+            //Conversions
+            int num = 3;
+            float f = num; //num is implicitly converted from int to float with no data lose
+
+            float f1 = 1.5f;
+            int num1 = (int)f1; //explicit conversion using cast operator()
+
+            //Boxing
+            int example3 = 1;
+            object o = example3; //int implicitly converted to object
+            //Unboxing - retrieving the value
+            int example4 = (int)o;
+            Console.WriteLine(example4);
+
+
         }
     }
 }
