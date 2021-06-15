@@ -98,6 +98,16 @@ namespace UdemyCompleteCsharp5
             s = stringBuilder.ToString();
             Console.WriteLine(s);
             Console.WriteLine("break");
+            string str1 = string.Empty;
+            string str2 = "Hello World";
+            Console.WriteLine(str1.Length);
+            Console.WriteLine(str2.Length);
+            string str3 = "The quick brown fox jumped over the lazy dog.";
+            string[] sArray = str3.Split(' ');
+            foreach (string str in sArray)
+            {
+                Console.WriteLine(str);
+            }
         }
     }
 }
