@@ -108,6 +108,15 @@ namespace UdemyCompleteCsharp5
             {
                 Console.WriteLine(str);
             }
+            string str4 = null;
+            string str5 = "";
+            string str6 = string.Empty;
+            string str7 = "Hey, I should be false";
+            Console.WriteLine(string.IsNullOrEmpty(str4)+ " Should be true");
+            Console.WriteLine(string.IsNullOrEmpty(str5) + " Should be true");
+            Console.WriteLine(string.IsNullOrEmpty(str6) + " Should be true");
+            Console.WriteLine(string.IsNullOrEmpty(str7) + " Should be false");
+
         }
     }
 }
