@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace UdemyCompleteCsharp5
@@ -120,7 +121,23 @@ namespace UdemyCompleteCsharp5
             bool? nullBool=null;
             bool example2 = false;
             example2 = (2 > 3);
-            Console.WriteLine(example2);           
+            Console.WriteLine(example2);
+
+            bool flag = false;
+            List<int> intList = new List<int> { 1, 2, 3, 4 };
+            foreach (int p in intList)
+            {
+                if (p == 3)
+                {
+                    flag = true;
+                }
+            }
+            if (flag)
+            {
+                Console.WriteLine("3 is in the list");
+            }
+            else
+                Console.WriteLine("3 is not in list");
 
         }
     }
