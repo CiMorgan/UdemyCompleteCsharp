@@ -153,7 +153,31 @@ namespace UdemyCompleteCsharp5
             int example4 = (int)o;
             Console.WriteLine(example4);
 
+            int vT = 200;
+            Console.WriteLine(vT);
+            ChangeValue(vT);
+            Console.WriteLine(vT); //original vT is not changed when the variable is entered into the method ChangeValue
 
+            Person pl = new Person();
+            pl.Name = "Just Bob";
+            Console.WriteLine(pl.Name);
+            ChangeReferenceType(pl);
+            Console.WriteLine(pl.Name);
+
+        }
+
+        static void ChangeValue(int num)
+        {
+            num = 500;
+            Console.WriteLine(num);
+        }
+        public class Person
+        {
+            public string Name;
+        }
+        static void ChangeReferenceType(Person person)
+        {
+            person.Name = "Billy Bob";
         }
     }
 }
