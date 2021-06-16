@@ -1,0 +1,13 @@
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp6.exe
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp6.deps.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp6.runtimeconfig.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp6.runtimeconfig.dev.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp6.dll
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp6.pdb
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp6.csprojAssemblyReference.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp6.AssemblyInfoInputs.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp6.AssemblyInfo.cs
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp6.csproj.CoreCompileInputs.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp6.dll
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp6.pdb
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp6\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp6.genruntimeconfig.cache
