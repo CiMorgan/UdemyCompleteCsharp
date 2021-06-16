@@ -19,6 +19,7 @@ namespace UdemyCompleteCsharp6
             Console.WriteLine(date.ToString("dddd, MMMM dd, yyyy"));
             Console.WriteLine(date.ToString("dddd, dd MMMM yyyy HH:mm:ss"));
             Console.WriteLine(date.ToString("MM/dd/yyyy  hh:mm tt"));
+            Console.WriteLine(DateTime.UtcNow.ToString("MM/dd/yyyy  hh:mm tt"));
         }
     }
 }
