@@ -9,6 +9,11 @@ namespace UdemyCompleteCsharp6
             DateTime date = new DateTime();
             date = DateTime.Now;
             Console.WriteLine(date);
+            TimeSpan span = new TimeSpan(1, 2, 0); //equivalent to TimeSpan.Zero if ()
+            Console.WriteLine(span.Hours);
+            Console.WriteLine(span.Minutes);
+            Console.WriteLine(span.Seconds);
+            Console.WriteLine(span.Milliseconds);
         }
     }
 }
