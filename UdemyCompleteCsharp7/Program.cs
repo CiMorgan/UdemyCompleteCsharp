@@ -21,8 +21,30 @@ namespace UdemyCompleteCsharp7
             {
                 Console.WriteLine("m is equal to n");
             }
-            
+
             //switch
+            int value = 4;
+            switch(value)
+            {
+                case 1:
+                    Console.WriteLine("The value is 1.");
+                    break;
+                case 2:
+                    Console.WriteLine("The value is 2.");
+                    break;
+                case 3:
+                    Console.WriteLine("The value is 3.");
+                    break;
+                case 4:
+                    Console.WriteLine("The value is 4.");
+                    break;
+                case 5:
+                    Console.WriteLine("The value is 5.");
+                    break;
+                default:
+                    Console.WriteLine("It is not 1 thru 5");
+                    break;
+            }
 
         }
     }
