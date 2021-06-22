@@ -60,6 +60,17 @@ namespace UdemyCompleteCsharp7
                 Console.WriteLine(example[i]);
             }
 
+            AddNumbers();
+
+        }
+        public static void AddNumbers()
+        {
+            int x = 0;
+            for (int i = 1; i < 100; i++)
+            {
+                x = x + i;
+            }
+            Console.WriteLine(x);
         }
     }
 }
