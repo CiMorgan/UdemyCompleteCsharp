@@ -80,6 +80,13 @@ namespace UdemyCompleteCsharp7
                 Console.WriteLine(l);
                 l++;
             } while (l < 5);
+
+            //infinite loops - does not have logic that will terminate loop - runs forever
+            //int p = 0;
+            //while (p < 2)
+            //{
+            //    Console.WriteLine("Infinite loop since p = 0 always < 2");
+            //}
             
         }
         public static void AddNumbers()
