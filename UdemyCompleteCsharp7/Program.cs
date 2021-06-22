@@ -61,6 +61,11 @@ namespace UdemyCompleteCsharp7
             }
 
             AddNumbers();
+            //foreach
+            foreach (char c in "Cindy")
+            {
+                Console.WriteLine(c);
+            }
 
         }
         public static void AddNumbers()
