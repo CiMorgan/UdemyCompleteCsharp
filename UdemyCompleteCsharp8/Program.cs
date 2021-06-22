@@ -6,7 +6,9 @@ namespace UdemyCompleteCsharp8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Write you name");
+            string userInput = Console.ReadLine();
+            Console.WriteLine("My name is "+userInput);
         }
     }
 }
