@@ -45,6 +45,20 @@ namespace UdemyCompleteCsharp7
                     Console.WriteLine("It is not 1 thru 5");
                     break;
             }
+            //for loops
+            for (int i=0; i<5; i++)
+            {
+                Console.WriteLine("Hello World!");
+            }
+            string example = "abc";
+            for (int i=0; i< example.Length; i++)
+            {
+                Console.WriteLine(example[i]);
+            }
+            for (int i = example.Length-1; i >= 0 ; i--)
+            {
+                Console.WriteLine(example[i]);
+            }
 
         }
     }
