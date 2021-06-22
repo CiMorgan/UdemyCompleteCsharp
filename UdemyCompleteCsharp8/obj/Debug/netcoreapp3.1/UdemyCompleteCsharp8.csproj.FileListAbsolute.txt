@@ -10,3 +10,4 @@ C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\Ude
 C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp8\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp8.dll
 C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp8\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp8.pdb
 C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp8\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp8.genruntimeconfig.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp8\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp8.csprojAssemblyReference.cache
