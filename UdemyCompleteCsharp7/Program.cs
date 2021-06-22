@@ -87,7 +87,39 @@ namespace UdemyCompleteCsharp7
             //{
             //    Console.WriteLine("Infinite loop since p = 0 always < 2");
             //}
-            
+
+            //break statement other than in switch
+            for (int r=1; r<3; r++)
+            {
+                Console.WriteLine("r is "+r);
+                for (int q = 0; q < 20; q++)
+                {
+                    if (q == 10)
+                    {
+                        Console.WriteLine("We reached 10...STOP!");
+                        break;  //stops current iteration of the loop
+                    }
+                    Console.WriteLine(q);
+                }
+            }
+            bool condition1 = true;
+            bool condition2 = true;
+
+            if (condition1)
+            {
+                Console.WriteLine("1");
+            }
+            else
+            {
+                Console.WriteLine("2");
+            }
+            if (condition2)
+            {
+                Console.WriteLine("3");
+            }
+
+
+
         }
         public static void AddNumbers()
         {
