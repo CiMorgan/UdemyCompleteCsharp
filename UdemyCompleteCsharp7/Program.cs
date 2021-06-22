@@ -73,6 +73,14 @@ namespace UdemyCompleteCsharp7
                 Console.WriteLine(k);
                 k++;
             }
+            //do while loop - bool condition check comes after the code block so it is always ran at least once
+            int l = 0;
+            do
+            {
+                Console.WriteLine(l);
+                l++;
+            } while (l < 5);
+            
         }
         public static void AddNumbers()
         {
