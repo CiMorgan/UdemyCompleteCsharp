@@ -66,7 +66,13 @@ namespace UdemyCompleteCsharp7
             {
                 Console.WriteLine(c);
             }
-
+            //while
+            int k = 0;
+            while (k < 3)
+            {
+                Console.WriteLine(k);
+                k++;
+            }
         }
         public static void AddNumbers()
         {
