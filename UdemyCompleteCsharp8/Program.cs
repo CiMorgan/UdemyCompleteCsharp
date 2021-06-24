@@ -39,13 +39,27 @@ namespace UdemyCompleteCsharp8
                 }
                 Console.Clear();
                 Console.WriteLine("g=green, r=red, b=blue, w=white");
-
                 y = Console.Read();
                 userInput = Convert.ToChar(y);
             }
+            Console.Clear();
+            Console.WriteLine("Press combo");
 
+            //ReadKey() obtain key presses like shift, escape, etc.. and key press combos
+            ConsoleKeyInfo keyInfo;
+            Console.TreatControlCAsInput = true;    //Control C does not terminiate program and exit the Console (Control C normally closses console)
 
+            do
+            {
+                keyInfo = Console.ReadKey();
+                if ((keyInfo.Modifiers & ConsoleModifiers.Alt) != 0)
+                    Console.WriteLine("ALT+");
+                if ((keyInfo.Modifiers & ConsoleModifiers.Shift) != 0)
+                    Console.WriteLine("SHIFT+");
+                if ((keyInfo.Modifiers & ConsoleModifiers.Control) != 0)
+                    Console.WriteLine("CONTROL+");
 
+            } while (keyInfo.Key != ConsoleKey.Escape);
 
         }
     }
