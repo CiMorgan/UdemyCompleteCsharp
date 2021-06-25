@@ -42,7 +42,7 @@ namespace UdemyCompleteCsharp8
                 y = Console.Read();
                 userInput = Convert.ToChar(y);
             }
-            Console.Clear();
+            Console.Clear();//dd
             Console.WriteLine("Press combo");
 
             //ReadKey() obtain key presses like shift, escape, etc.. and key press combos
