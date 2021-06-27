@@ -8,7 +8,7 @@ namespace UdemyCompleteCsharp8
         {
             Console.WriteLine("Write you name");
             string uInput = Console.ReadLine();
-            Console.WriteLine("My name is "+uInput);
+            Console.WriteLine("My name is " + uInput);
 
             Console.WriteLine("Hit a key: ");
             int x = Console.Read();   //Read() returns an int
@@ -43,6 +43,7 @@ namespace UdemyCompleteCsharp8
                 userInput = Convert.ToChar(y);
             }
             Console.Clear();//dd
+            Console.ResetColor();
             Console.WriteLine("Press combo");
 
             //ReadKey() obtain key presses like shift, escape, etc.. and key press combos
@@ -60,6 +61,27 @@ namespace UdemyCompleteCsharp8
                     Console.WriteLine("CONTROL+");
 
             } while (keyInfo.Key != ConsoleKey.Escape);
+            Console.Clear();
+            Console.WriteLine("\n Please enter a number: ");
+            do
+            {
+                string userInput1 = Console.ReadLine();
+                int number;
+
+                if (!int.TryParse(userInput1, out number))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("You entered an invalid Input!");
+                    Console.ResetColor();
+                    Console.WriteLine("\nPlease enter a number: ");
+                }
+                else
+                {
+                    Console.WriteLine(number);
+                    Console.WriteLine("\nThanks! Please enter another number.");
+                }
+
+            } while (true);
 
         }
     }
