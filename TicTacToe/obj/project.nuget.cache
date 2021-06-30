@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dVHwIeVO3m50mPu+q9e8/7DrEFj89uEJObhfFOSwMNKm/KpEruKfA4yhIonIbc7tllkacSqCCzbyFB4p+wTf7w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\camor\\OneDrive\\Documents\\Computer Science\\Udemy\\UdemyCompleteCsharp\\TicTacToe\\TicTacToe.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\camor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
