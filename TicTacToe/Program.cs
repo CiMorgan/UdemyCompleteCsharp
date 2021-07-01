@@ -3,6 +3,7 @@ using System.Threading;
 
 namespace TicTacToe
 {
+    //Tic Tac Toe game from Udemy
     class Program
     {
         static char[] spaces = new char[] { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
@@ -24,6 +25,7 @@ namespace TicTacToe
             Console.WriteLine("     |     |     ");
             Console.WriteLine("  {0}  |  {1}  |   {2}  ", spaces[6], spaces[7], spaces[8]);
             Console.WriteLine("     |     |     ");
+            Console.WriteLine("\n");
         }
         /// <summary>
         /// Checks if the game was won, tied, or should continue
@@ -95,6 +97,7 @@ namespace TicTacToe
                 }
                 Console.WriteLine("\n");
                 DrawBoard();
+                Console.WriteLine("Select a square:");
                 choice = int.Parse(Console.ReadLine()) - 1;
 
                 if (spaces[choice] != 'X' && spaces[choice] != 'O')
@@ -125,7 +128,7 @@ namespace TicTacToe
 
             if (flag == 1)
             {
-                Console.WriteLine("Player {0} has won.", (player % 2) + 1);
+                Console.WriteLine("Player {0} has won the game!", (player % 2) + 1);
             }
             else
             {
