@@ -64,12 +64,46 @@ namespace TicTacToe
         /// <param name="pos"></param>
         static void DrawX(int pos)
         {
-
+            spaces[pos] = 'X';
         }
-
+        /// <summary>
+        /// Draw an O to the game board
+        /// </summary>
+        /// <param name="pos"></param>
+        static void DrawO(int pos)
+        {
+            spaces[pos] = 'O';
+        }
+        /// <summary>
+        /// Main game loop
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Player 1: X  and Player 2: O"+"\n");
+
+                if(player % 2 == 0)
+                {
+                    Console.WriteLine("Player 2's turn");
+                }
+                else
+                {
+                    Console.WriteLine("Player 1's turn");
+                }
+                Console.WriteLine("\n");
+                DrawBoard();
+                choice = int.Parse(Console.ReadLine()) - 1;
+
+                if(spaces[choice] != 'X' && spaces[choice] != 'O')
+                {
+
+                }
+
+
+            }
         }
     }
 }
