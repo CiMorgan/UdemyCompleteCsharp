@@ -8,7 +8,7 @@ namespace TicTacToe
         static char[] spaces = new char[] { '1', '2', '3', '4', '5', '6', '7', '8', '9' };
         static int player = 1;
         static int choice;
-        static int flag;
+        static int flag = 0;
 
         /// <summary>
         /// Draws the game board
@@ -16,14 +16,14 @@ namespace TicTacToe
         static void DrawBoard()
         {
             Console.WriteLine("     |     |     ");
-            Console.WriteLine("  {0}   |  {1}   |   {2}  ", spaces[0], spaces[1], spaces[2]);
+            Console.WriteLine("  {0}  |  {1}  |   {2}  ", spaces[0], spaces[1], spaces[2]);
             Console.WriteLine("_____|_____|_____");
             Console.WriteLine("     |     |     ");
-            Console.WriteLine("  {0}   |  {1}   |   {2}  ", spaces[3], spaces[4], spaces[5]);
+            Console.WriteLine("  {0}  |  {1}  |   {2}  ", spaces[3], spaces[4], spaces[5]);
             Console.WriteLine("_____|_____|_____");
             Console.WriteLine("     |     |     ");
-            Console.WriteLine("  {0}   |  {1}   |   {2}  ", spaces[6], spaces[7], spaces[8]);
-            Console.WriteLine("_____|_____|_____");
+            Console.WriteLine("  {0}  |  {1}  |   {2}  ", spaces[6], spaces[7], spaces[8]);
+            Console.WriteLine("     |     |     ");
         }
         /// <summary>
         /// Checks if the game was won, tied, or should continue
@@ -41,15 +41,15 @@ namespace TicTacToe
             {
                 return 1; //someone won
             }
-            else if (spaces[0] != '0'
-                && spaces[1] != '1'
-                && spaces[2] != '2'
-                && spaces[3] != '3'
-                && spaces[4] != '4'
-                && spaces[5] != '5'
-                && spaces[6] != '6'
-                && spaces[7] != '7'
-                && spaces[8] != '8')
+            else if (spaces[0] != '1'
+                && spaces[1] != '2'
+                && spaces[2] != '3'
+                && spaces[3] != '4'
+                && spaces[4] != '5'
+                && spaces[5] != '6'
+                && spaces[6] != '7'
+                && spaces[7] != '8'
+                && spaces[8] != '9')
             {
                 return -1; //tie
             }
@@ -83,9 +83,9 @@ namespace TicTacToe
             do
             {
                 Console.Clear();
-                Console.WriteLine("Player 1: X  and Player 2: O"+"\n");
+                Console.WriteLine("Player 1: X  and Player 2: O" + "\n");
 
-                if(player % 2 == 0)
+                if (player % 2 == 0)
                 {
                     Console.WriteLine("Player 2's turn");
                 }
@@ -97,13 +97,44 @@ namespace TicTacToe
                 DrawBoard();
                 choice = int.Parse(Console.ReadLine()) - 1;
 
-                if(spaces[choice] != 'X' && spaces[choice] != 'O')
+                if (spaces[choice] != 'X' && spaces[choice] != 'O')
                 {
-
+                    if (player % 2 == 0)
+                    {
+                        DrawO(choice);
+                    }
+                    else
+                    {
+                        DrawX(choice);
+                    }
+                    player++;
                 }
+                else
+                {
+                    Console.WriteLine("Sorry the space {0} is already marked with an {1} \n", choice, spaces[choice]);
+                    Console.WriteLine("Please wait 2 seconds for the board to reload.");
+                    Thread.Sleep(2000);
+                }
+                flag = CheckWin();
 
 
+            } while (flag != 1 && flag != -1);
+
+            Console.Clear();
+            DrawBoard();
+
+            if (flag == 1)
+            {
+                Console.WriteLine("Player {0} has won.", (player % 2) + 1);
             }
+            else
+            {
+                Console.WriteLine("Tie game");
+            }
+
+            Console.ReadLine();
+
+
         }
     }
 }
