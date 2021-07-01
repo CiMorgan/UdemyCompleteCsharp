@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyCompleteCsharp7", "Ude
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyCompleteCsharp8", "UdemyCompleteCsharp8\UdemyCompleteCsharp8.csproj", "{2782DE5E-B558-42D8-9749-B545066B97F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{F7253AAF-8490-4171-B110-CE9D86C5D703}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicTacToe", "TicTacToe\TicTacToe.csproj", "{F7253AAF-8490-4171-B110-CE9D86C5D703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyCompleteCsharp9", "UdemyCompleteCsharp9\UdemyCompleteCsharp9.csproj", "{268301C0-A5C9-4DE1-95D9-0F69A05F872B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{F7253AAF-8490-4171-B110-CE9D86C5D703}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7253AAF-8490-4171-B110-CE9D86C5D703}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7253AAF-8490-4171-B110-CE9D86C5D703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{268301C0-A5C9-4DE1-95D9-0F69A05F872B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{268301C0-A5C9-4DE1-95D9-0F69A05F872B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{268301C0-A5C9-4DE1-95D9-0F69A05F872B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{268301C0-A5C9-4DE1-95D9-0F69A05F872B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

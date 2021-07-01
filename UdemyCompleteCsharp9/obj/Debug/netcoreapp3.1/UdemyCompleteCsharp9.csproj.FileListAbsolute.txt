@@ -1,0 +1,12 @@
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp9.exe
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp9.deps.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp9.runtimeconfig.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp9.runtimeconfig.dev.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp9.dll
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp9.pdb
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp9.AssemblyInfoInputs.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp9.AssemblyInfo.cs
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp9.csproj.CoreCompileInputs.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp9.dll
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp9.pdb
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp9\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp9.genruntimeconfig.cache
