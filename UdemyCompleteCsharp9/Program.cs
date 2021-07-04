@@ -2,11 +2,28 @@
 
 namespace UdemyCompleteCsharp9
 {
-    class Program
+    public class Example
     {
-        static void Main(string[] args)
+        int exampleNumber;
+        string exampleName;
+
+        public Example(int num)
         {
-            //functions - write code that can be reused
+            exampleNumber = num;
+        }
+
+        public Example(int num, string name)
+        {
+            exampleNumber = num;
+            exampleName = name;
+        }
+    
+        public static void Main(string[] args)
+        {
+            Example ex = new Example(5);
+            Example ex2 = new Example(3, "John");
+            Console.WriteLine(ex.exampleNumber);
+            Console.WriteLine(ex2.exampleName+" has "+ex2.exampleNumber+" Bitcoins.");
         }
 
     }
