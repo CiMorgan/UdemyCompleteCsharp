@@ -29,28 +29,50 @@ namespace UdemyCompleteCsharp9
     //    }
 
     //}
-    public class Program
+    //public class Program
+    //{
+    //    //public string Id { get; set; } //autoimplemented property - get and set with no special syntax
+    //    //just get - read only;  just set - write only; both get and set - both read and write
+    //    //attributes put in [] above target
+    //    private string id;
+    //    public string Id
+    //    {
+    //        get
+    //        {
+    //            return id;
+    //        }
+    //        set
+    //        {
+    //            id = value;
+    //        }
+    //    }
+    //    public static void Main(string[] args)
+    //    {
+    //        Program program = new Program();
+    //        program.Id = "1234";
+    //        Console.WriteLine(program.Id);
+    //    }
+    //}
+
+    //anonymous functions and lambda expressions
+    public class Example
     {
-        //public string Id { get; set; } //autoimplemented property - get and set with no special syntax
-        //just get - read only;  just set - write only; both get and set - both read and write
-        //attributes put in [] above target
-        private string id;
-        public string Id
-        {
-            get
-            {
-                return id;
-            }
-            set
-            {
-                id = value;
-            }
-        }
         public static void Main(string[] args)
         {
-            Program program = new Program();
-            program.Id = "1234";
-            Console.WriteLine(program.Id);
+            Action debug = () => Console.WriteLine("Hello World!");  //=> lambda operator
+            debug();
+
+            Action multiDebug = () =>
+            {
+                Console.WriteLine("Many hello's!");
+                Console.WriteLine("Many hello's!");
+                Console.WriteLine("Many hello's!");
+            };
+            multiDebug();
+
+            Action<string> specName = (s) => Console.WriteLine("Hello "+s);
+            specName("Cindy");
+
         }
     }
 }
