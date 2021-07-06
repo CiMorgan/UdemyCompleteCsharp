@@ -32,6 +32,8 @@ namespace UdemyCompleteCsharp9
     public class Program
     {
         //public string Id { get; set; } //autoimplemented property - get and set with no special syntax
+        //just get - read only;  just set - write only; both get and set - both read and write
+        //attributes put in [] above target
         private string id;
         public string Id
         {
