@@ -73,6 +73,10 @@ namespace UdemyCompleteCsharp9
             Action<string> specName = (s) => Console.WriteLine("Hello "+s);
             specName("Cindy");
 
+            //Func delegate
+            Func<int, int, int> multiply = (x, y) => { return x * y; }; //Func<input type, input type,..., return type>
+            Console.WriteLine(multiply(3,2));
+
         }
     }
 }
