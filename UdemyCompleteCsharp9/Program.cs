@@ -17,6 +17,8 @@ namespace UdemyCompleteCsharp9
             exampleNumber = num;
             exampleName = name;
         }
+        //finalizer used by garbage collector when class is destroyed
+        //~Example(){}
     
         public static void Main(string[] args)
         {
