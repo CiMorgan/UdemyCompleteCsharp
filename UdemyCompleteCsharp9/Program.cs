@@ -101,10 +101,28 @@ namespace UdemyCompleteCsharp9
         {
             Console.WriteLine("Hi world!");
         }
+        //public static void Main(string[] args)
+        //{
+        //    Example2 ex2 = new Example2();
+        //    ex2.PrintHelloWorld();
+        //}
+    }
+
+    //params keyword - allow infinite parameters of a single type
+    public class Program
+    {
+        public static void Example1(params string[] words)
+        {
+            foreach(string word in words)
+            {
+                Console.WriteLine(word);
+            }
+        }
         public static void Main(string[] args)
         {
-            Example2 ex2 = new Example2();
-            ex2.PrintHelloWorld();
+            Example1();
+            Example1("Hi");
+            Example1("This", "is", "fun");
         }
     }
 }
