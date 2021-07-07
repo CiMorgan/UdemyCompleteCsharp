@@ -19,7 +19,7 @@ namespace UdemyCompleteCsharp9
     //    }
     //    //finalizer used by garbage collector when class is destroyed
     //    //~Example(){}
-    
+
     //    public static void Main(string[] args)
     //    {
     //        Example ex = new Example(5);
@@ -55,28 +55,38 @@ namespace UdemyCompleteCsharp9
     //}
 
     //anonymous functions and lambda expressions
+    //public class Example
+    //{
+    //    public static void Main(string[] args)
+    //    {
+            //        Action debug = () => Console.WriteLine("Hello World!");  //=> lambda operator
+            //        debug();
+
+            //        Action multiDebug = () =>
+            //        {
+            //            Console.WriteLine("Many hello's!");
+            //            Console.WriteLine("Many hello's!");
+            //            Console.WriteLine("Many hello's!");
+            //        };
+            //        multiDebug();
+
+            //        Action<string> specName = (s) => Console.WriteLine("Hello "+s);
+            //        specName("Cindy");
+
+            //        //Func delegate
+            //        Func<int, int, int> multiply = (x, y) => { return x * y; }; //Func<input type, input type,..., return type>
+            //        Console.WriteLine(multiply(3,2));
+    //    }
+    //}
     public class Example
     {
-        public static void Main(string[] args)
-        {
-            Action debug = () => Console.WriteLine("Hello World!");  //=> lambda operator
-            debug();
-
-            Action multiDebug = () =>
-            {
-                Console.WriteLine("Many hello's!");
-                Console.WriteLine("Many hello's!");
-                Console.WriteLine("Many hello's!");
-            };
-            multiDebug();
-
-            Action<string> specName = (s) => Console.WriteLine("Hello "+s);
-            specName("Cindy");
-
-            //Func delegate
-            Func<int, int, int> multiply = (x, y) => { return x * y; }; //Func<input type, input type,..., return type>
-            Console.WriteLine(multiply(3,2));
-
-        }
+        //Overloading - need different parameters; use method in multiple ways (allows polymorphism)
+        //alter number, type, and order of parameters
+        void Ex() { }
+        void Ex(int number) { }
+        void Ex(int num1, int num2) { }
+        void Ex(int num, string str) { }
+        void Ex(string str, int num) { }
     }
+
 }
