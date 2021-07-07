@@ -59,34 +59,52 @@ namespace UdemyCompleteCsharp9
     //{
     //    public static void Main(string[] args)
     //    {
-            //        Action debug = () => Console.WriteLine("Hello World!");  //=> lambda operator
-            //        debug();
+    //        Action debug = () => Console.WriteLine("Hello World!");  //=> lambda operator
+    //        debug();
 
-            //        Action multiDebug = () =>
-            //        {
-            //            Console.WriteLine("Many hello's!");
-            //            Console.WriteLine("Many hello's!");
-            //            Console.WriteLine("Many hello's!");
-            //        };
-            //        multiDebug();
+    //        Action multiDebug = () =>
+    //        {
+    //            Console.WriteLine("Many hello's!");
+    //            Console.WriteLine("Many hello's!");
+    //            Console.WriteLine("Many hello's!");
+    //        };
+    //        multiDebug();
 
-            //        Action<string> specName = (s) => Console.WriteLine("Hello "+s);
-            //        specName("Cindy");
+    //        Action<string> specName = (s) => Console.WriteLine("Hello "+s);
+    //        specName("Cindy");
 
-            //        //Func delegate
-            //        Func<int, int, int> multiply = (x, y) => { return x * y; }; //Func<input type, input type,..., return type>
-            //        Console.WriteLine(multiply(3,2));
+    //        //Func delegate
+    //        Func<int, int, int> multiply = (x, y) => { return x * y; }; //Func<input type, input type,..., return type>
+    //        Console.WriteLine(multiply(3,2));
     //    }
+    //}
+    //public class Example
+    //{
+    //    //Overloading - need different parameters; use method in multiple ways (allows polymorphism)
+    //    //alter number, type, and order of parameters
+    //    void Ex() { }
+    //    void Ex(int number) { }
+    //    void Ex(int num1, int num2) { }
+    //    void Ex(int num, string str) { }
+    //    void Ex(string str, int num) { }
     //}
     public class Example
     {
-        //Overloading - need different parameters; use method in multiple ways (allows polymorphism)
-        //alter number, type, and order of parameters
-        void Ex() { }
-        void Ex(int number) { }
-        void Ex(int num1, int num2) { }
-        void Ex(int num, string str) { }
-        void Ex(string str, int num) { }
+        public void PrintHelloWorld()
+        {
+            Console.WriteLine("Hello World!");
+        }
     }
-
+    public class Example2 : Example
+    {
+        public void PrintHelloWorld()  //override parent method
+        {
+            Console.WriteLine("Hi world!");
+        }
+        public static void Main(string[] args)
+        {
+            Example2 ex2 = new Example2();
+            ex2.PrintHelloWorld();
+        }
+    }
 }
