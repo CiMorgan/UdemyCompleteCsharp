@@ -109,28 +109,49 @@ namespace UdemyCompleteCsharp9
     }
 
     //params keyword - allow infinite parameters of a single type
-    public class Program
-    {
-        public static void Example1(params string[] words)
-        {
-            foreach(string word in words)
-            {
-                Console.WriteLine(word);
-            }
-        }
+    //public class Program
+    //{
+    //    public static void Example1(params string[] words)
+    //    {
+    //        foreach(string word in words)
+    //        {
+    //            Console.WriteLine(word);
+    //        }
+    //    }
 
-        static void PrintMessage(string message = "Yes, Hello World!")
+    //    static void PrintMessage(string message = "Yes, Hello World!")
+    //    {
+    //        Console.WriteLine(message);
+    //    }
+    //    public static void Main(string[] args)
+    //    {
+    //        Example1();
+    //        Example1("Hi");
+    //        Example1("This", "is", "fun");
+    //        PrintMessage();
+    //        PrintMessage("Hi Cindy");
+
+    //    }
+    //}
+
+    //Extension Methods
+    public static class Program
+    {
+        public static bool GreaterThan(this int i, int val)  //this keyword apply to int type
         {
-            Console.WriteLine(message);
+            if (i > val)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
         public static void Main(string[] args)
         {
-            Example1();
-            Example1("Hi");
-            Example1("This", "is", "fun");
-            PrintMessage();
-            PrintMessage("Hi Cindy");
-
+            Console.WriteLine(2.GreaterThan(4));
+            Console.WriteLine(5.GreaterThan(4));
         }
     }
 }
