@@ -118,11 +118,19 @@ namespace UdemyCompleteCsharp9
                 Console.WriteLine(word);
             }
         }
+
+        static void PrintMessage(string message = "Yes, Hello World!")
+        {
+            Console.WriteLine(message);
+        }
         public static void Main(string[] args)
         {
             Example1();
             Example1("Hi");
             Example1("This", "is", "fun");
+            PrintMessage();
+            PrintMessage("Hi Cindy");
+
         }
     }
 }
