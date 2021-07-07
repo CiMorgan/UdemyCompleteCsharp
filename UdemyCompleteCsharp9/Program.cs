@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Diagnostics;
+using System.Threading.Tasks;
 
 namespace UdemyCompleteCsharp9
 {
@@ -88,25 +90,25 @@ namespace UdemyCompleteCsharp9
     //    void Ex(int num, string str) { }
     //    void Ex(string str, int num) { }
     //}
-    public class Example
-    {
-        public void PrintHelloWorld()
-        {
-            Console.WriteLine("Hello World!");
-        }
-    }
-    public class Example2 : Example
-    {
-        public void PrintHelloWorld()  //override parent method
-        {
-            Console.WriteLine("Hi world!");
-        }
-        //public static void Main(string[] args)
-        //{
-        //    Example2 ex2 = new Example2();
-        //    ex2.PrintHelloWorld();
-        //}
-    }
+    //public class Example
+    //{
+    //    public void PrintHelloWorld()
+    //    {
+    //        Console.WriteLine("Hello World!");
+    //    }
+    //}
+    //public class Example2 : Example
+    //{
+    //    public void PrintHelloWorld()  //override parent method
+    //    {
+    //        Console.WriteLine("Hi world!");
+    //    }
+    //    public static void Main(string[] args)
+    //    {
+    //        Example2 ex2 = new Example2();
+    //        ex2.PrintHelloWorld();
+    //    }
+    //}
 
     //params keyword - allow infinite parameters of a single type
     //public class Program
@@ -135,23 +137,98 @@ namespace UdemyCompleteCsharp9
     //}
 
     //Extension Methods
-    public static class Program
-    {
-        public static bool GreaterThan(this int i, int val)  //this keyword apply to int type
+    //public static class Program
+    //{
+    //    public static bool GreaterThan(this int i, int val)  //this keyword apply to int type - create additional method for builtin class (i.e. int, string, etc...)
+    //    {
+    //        if (i > val)
+    //        {
+    //            return true;
+    //        }
+    //        else
+    //        {
+    //            return false;
+    //        }
+    //    }
+    //    public static void Main(string[] args)
+    //    {
+    //        Console.WriteLine(2.GreaterThan(4));
+    //        Console.WriteLine(5.GreaterThan(4));
+    //    }
+    //}
+    //class Example1 //syncronized mathod
+    //{
+    //    static void CookMeat()
+    //    {
+    //        Debug.WriteLine("Cook Meat");
+    //    }
+    //    static void CookVegetables()
+    //    {
+    //        Debug.WriteLine("Cook Vegetables");
+    //    }
+    //    static void MakeBread()
+    //    {
+    //        Debug.WriteLine("Make Bread");
+    //    }
+    //    static void MakeSoup()
+    //    {
+    //        Debug.WriteLine("Make Soup");
+    //    }
+    //    static void MakeSalad()
+    //    {
+    //        Debug.WriteLine("Make Salad");
+    //    }
+    //    static void MakeDrinks()
+    //    {
+    //        Debug.WriteLine("Make Drinks");
+    //    }
+    //    static void MakeDinner()
+    //    {
+    //        CookMeat();
+    //        CookVegetables();
+    //        MakeBread();
+    //        MakeSoup();
+    //        MakeSalad();
+    //        MakeDrinks();
+    //    }
+        class Example2 //asyncronized mathod
         {
-            if (i > val)
+            static async Task CookMeat()
             {
-                return true;
+                Debug.WriteLine("Cook Meat");
             }
-            else
+            static async Task CookVegetables()
             {
-                return false;
+                Debug.WriteLine("Cook Vegetables");
             }
-        }
-        public static void Main(string[] args)
+            static async Task MakeBread()
+            {
+                Debug.WriteLine("Make Bread");
+            }
+            static async Task MakeSoup()
+            {
+                Debug.WriteLine("Make Soup");
+            }
+            static async Task MakeSalad()
+            {
+                Debug.WriteLine("Make Salad");
+            }
+            static async Task MakeDrinks()
+            {
+                Debug.WriteLine("Make Drinks");
+            }
+            static async Task MakeDinner()
+            {
+                await CookMeat();
+                await CookVegetables();
+                await MakeBread();
+                await MakeSoup();
+                await MakeSalad();
+                await MakeDrinks();
+            }
+            public static void Main(string[] args)
         {
-            Console.WriteLine(2.GreaterThan(4));
-            Console.WriteLine(5.GreaterThan(4));
+            MakeDinner();
         }
     }
 }
