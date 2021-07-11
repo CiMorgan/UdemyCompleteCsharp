@@ -2,7 +2,7 @@
 
 namespace UdemyCompleteCsharp10
 {
-    class Program : IExample, ISecondExample
+    class Program : IExample, ISecondExample  //need to use all methods in the interface otherwise it will not compile
     {
         static void Main(string[] args)
         {
