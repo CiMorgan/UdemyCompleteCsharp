@@ -2,19 +2,34 @@
 
 namespace UdemyCompleteCsharp10
 {
-    class Program
+    class Program : IExample, ISecondExample
     {
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }
 
-        interface IExample   //C# convention to begin interfaces with I
+        public void Example()
         {
-            void Example();  //includes method signature but not method itself
-            int Example2(int n);
-            string Example3(string str1, string str2);
-        } 
-        //haven't done this section yet
+            Console.WriteLine("Hello World");
+        }
+
+        public int Example2(int n)
+        {
+            return 1;
+        }
+
+        public string Example3(string str1, string str2)
+        {
+            return str1 + " " + str2;
+        }
     }
+    interface IExample   //C# convention to begin interfaces with I
+    {
+        void Example();  //includes method signature but not method itself
+        int Example2(int n);
+        string Example3(string str1, string str2);
+    }
+
+    interface ISecondExample { }
 }
