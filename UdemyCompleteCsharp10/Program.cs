@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel;
+using System.Collections;
 
 namespace UdemyCompleteCsharp10
 {
@@ -56,32 +57,50 @@ namespace UdemyCompleteCsharp10
     //    }
     //}
 
-    class Program3: IComparable
-    {
-        public int exampleLength;
-        Program3 ex1 = new Program3() { exampleLength = 2 };
+    //class Program3: IComparable
+    //{
+    //    public int exampleLength;
+    //    Program3 ex1 = new Program3() { exampleLength = 2 };
 
+    //    public static void Main(string[] args)
+    //    {
+
+    //    }
+
+    //    public int CompareTo(object obj)
+    //    {
+    //        Program3 ex2 = (Program3)obj;
+    //        if (ex1.exampleLength == ex2.exampleLength)
+    //        {
+    //            return 0;
+    //        }
+    //        else if (ex1.exampleLength > ex2.exampleLength)
+    //        {
+    //            return 1;
+    //        }
+    //        else
+    //        {
+    //            return -1;
+    //        }
+                
+    //    }
+    //}
+    class Program4 : IComparer
+    {
+        class Employee
+        {
+            public int Id;
+        }
         public static void Main(string[] args)
         {
 
         }
 
-        public int CompareTo(object obj)
+        public int Compare(object x, object y)
         {
-            Program3 ex2 = (Program3)obj;
-            if (ex1.exampleLength == ex2.exampleLength)
-            {
-                return 0;
-            }
-            else if (ex1.exampleLength > ex2.exampleLength)
-            {
-                return 1;
-            }
-            else
-            {
-                return -1;
-            }
-                
+            Employee employee1 = (Employee)x;
+            Employee employee2 = (Employee)y;
+            return employee1.Id.CompareTo(employee2.Id);
         }
     }
 }
