@@ -34,25 +34,54 @@ namespace UdemyCompleteCsharp10
 
     //interface ISecondExample { }
 
-    class Program2 : INotifyPropertyChanged
+    //class Program2 : INotifyPropertyChanged
+    //{
+    //    public event PropertyChangedEventHandler PropertyChanged; //auto filled with Quick actions and refactoring
+    //    public string Name
+    //    {
+    //        get
+    //        {
+    //            return Name;
+    //        }
+    //        set
+    //        {
+    //            Name = value;
+    //            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Name));
+    //        }
+    //    }
+
+    //    static void Main(string[] args)
+    //    {
+
+    //    }
+    //}
+
+    class Program3: IComparable
     {
-        public event PropertyChangedEventHandler PropertyChanged; //auto filled with Quick actions and refactoring
-        public string Name
+        public int exampleLength;
+        Program3 ex1 = new Program3() { exampleLength = 2 };
+
+        public static void Main(string[] args)
         {
-            get
-            {
-                return Name;
-            }
-            set
-            {
-                Name = value;
-                PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(Name));
-            }
+
         }
 
-        static void Main(string[] args)
+        public int CompareTo(object obj)
         {
-
+            Program3 ex2 = (Program3)obj;
+            if (ex1.exampleLength == ex2.exampleLength)
+            {
+                return 0;
+            }
+            else if (ex1.exampleLength > ex2.exampleLength)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+                
         }
     }
 }
