@@ -1,6 +1,8 @@
 ﻿using System;
 using System.ComponentModel;
 using System.Collections;
+using System.Diagnostics.CodeAnalysis;
+using System.Collections.Generic;
 
 namespace UdemyCompleteCsharp10
 {
@@ -85,22 +87,66 @@ namespace UdemyCompleteCsharp10
                 
     //    }
     //}
-    class Program4 : IComparer
+    //class Program4 : IComparer
+    //{
+    //    class Employee
+    //    {
+    //        public int Id;
+    //    }
+    //    public static void Main(string[] args)
+    //    {
+
+    //    }
+
+    //    public int Compare(object x, object y)
+    //    {
+    //        Employee employee1 = (Employee)x;
+    //        Employee employee2 = (Employee)y;
+    //        return employee1.Id.CompareTo(employee2.Id);
+    //    }
+    //}
+    //class Program4 : IEquatable<Program4>
+    //{
+    //    public string exampleData;
+
+    //    public static void Main(string[] args)
+    //    {
+
+    //    }
+
+    //    public bool Equals([AllowNull] Program4 other)  //determine whether or not 2 things are equal
+    //    {
+    //        if(other == null)
+    //        {
+    //            return false;
+    //        }
+    //        return exampleData.GetHashCode().Equals(other.exampleData.GetHashCode());
+    //    }
+    //}
+    public class Officer
     {
-        class Employee
+        Guid id;
+        public Guid Id
         {
-            public int Id;
+            get { return id; }
+            set { id = value; }
         }
+    }
+    class Program5 : IEqualityComparer<Officer>
+    {
         public static void Main(string[] args)
         {
 
         }
 
-        public int Compare(object x, object y)
+        public bool Equals([AllowNull] Officer x, [AllowNull] Officer y) //takes in 2 objects of the type in angular brackets
         {
-            Employee employee1 = (Employee)x;
-            Employee employee2 = (Employee)y;
-            return employee1.Id.CompareTo(employee2.Id);
+            return x.Id == y.Id;
+        }
+
+        public int GetHashCode([DisallowNull] Officer obj)  //takes in one parameter of the type in angular brackets
+        {
+            return obj.Id.GetHashCode();
         }
     }
 }
