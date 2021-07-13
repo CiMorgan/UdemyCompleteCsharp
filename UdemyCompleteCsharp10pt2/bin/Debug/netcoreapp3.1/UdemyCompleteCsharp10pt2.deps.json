@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "UdemyCompleteCsharp10pt2/1.0.0": {
+        "runtime": {
+          "UdemyCompleteCsharp10pt2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "UdemyCompleteCsharp10pt2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
