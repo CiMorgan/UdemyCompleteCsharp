@@ -84,7 +84,7 @@ namespace UdemyCompleteCsharp10
     //        {
     //            return -1;
     //        }
-                
+
     //    }
     //}
     //class Program4 : IComparer
@@ -123,30 +123,80 @@ namespace UdemyCompleteCsharp10
     //        return exampleData.GetHashCode().Equals(other.exampleData.GetHashCode());
     //    }
     //}
-    public class Officer
+    //public class Officer
+    //{
+    //    Guid id;
+    //    public Guid Id
+    //    {
+    //        get { return id; }
+    //        set { id = value; }
+    //    }
+    //}
+    //class Program5 : IEqualityComparer<Officer>
+    //{
+    //    public static void Main(string[] args)
+    //    {
+
+    //    }
+
+    //    public bool Equals([AllowNull] Officer x, [AllowNull] Officer y) //takes in 2 objects of the type in angular brackets
+    //    {
+    //        return x.Id == y.Id;
+    //    }
+
+    //    public int GetHashCode([DisallowNull] Officer obj)  //takes in one parameter of the type in angular brackets
+    //    {
+    //        return obj.Id.GetHashCode();
+    //    }
+    //}
+    class Wallet : IEnumerable
     {
-        Guid id;
-        public Guid Id
+        Money[] bills = null;
+        int openIndex = 0;   //next slot in wallet not taken up by a bill; keeps track of the next open index in the array
+
+        public Wallet()
         {
-            get { return id; }
-            set { id = value; }
+            bills = new Money[100];
+        }
+
+        public void Add(Money bill)
+        {
+            bills[openIndex] = bill;
+            openIndex++;
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            foreach (Money bill in bills)
+            {
+                if (bill == null)
+                {
+                    break;
+                }
+                yield return bill;
+            }
         }
     }
-    class Program5 : IEqualityComparer<Officer>
+    class Money
+    {
+        public int amount;
+    }
+    class Program6
     {
         public static void Main(string[] args)
         {
+            Wallet wallet = new Wallet();
+            wallet.Add(new Money() { amount = 1 });
+            wallet.Add(new Money() { amount = 5 });
+            wallet.Add(new Money() { amount = 10 });
+            wallet.Add(new Money() { amount = 20 });
+            wallet.Add(new Money() { amount = 50 });
+            wallet.Add(new Money() { amount = 100 });
+            foreach (Money money in wallet)
+            {
+                Console.WriteLine("Bill: " + money.amount);
+            }
 
-        }
-
-        public bool Equals([AllowNull] Officer x, [AllowNull] Officer y) //takes in 2 objects of the type in angular brackets
-        {
-            return x.Id == y.Id;
-        }
-
-        public int GetHashCode([DisallowNull] Officer obj)  //takes in one parameter of the type in angular brackets
-        {
-            return obj.Id.GetHashCode();
         }
     }
 }
