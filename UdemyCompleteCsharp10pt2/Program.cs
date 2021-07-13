@@ -8,5 +8,5 @@ namespace UdemyCompleteCsharp10pt2
     }
     abstract class Animal { }
 
-    class Dog : Animal
+    class Dog : Animal { }
 }
