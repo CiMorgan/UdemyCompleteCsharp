@@ -200,29 +200,52 @@ namespace UdemyCompleteCsharp10
     //    }
     //}
 
-    class Program7 : IEnumerator
+    //class Program7 : IEnumerator
+    //{
+    //    List<object> items = new List<object>();
+    //    int current;
+    //    public object Current => items[current];
+
+    //    public static void Main(string[] args)
+    //    {
+
+    //    }
+
+    //    public bool MoveNext()
+    //    {
+    //        if(items.Count == 0 || items.Count <= current)
+    //        {
+    //            return false;
+    //        }
+    //        return true;
+    //    }
+
+    //    public void Reset()
+    //    {
+    //        current = 0;
+    //    }
+    //}
+    class Program8 : ICollection
     {
-        List<object> items = new List<object>();
-        int current;
-        public object Current => items[current];
+        public int Count => throw new NotImplementedException();  //number of elements in collection
+
+        public bool IsSynchronized => throw new NotImplementedException();  //
+
+        public object SyncRoot => throw new NotImplementedException();
 
         public static void Main(string[] args)
         {
 
         }
 
-        public bool MoveNext()
+        public void CopyTo(Array array, int index)
         {
-            if(items.Count == 0 || items.Count <= current)
-            {
-                return false;
-            }
-            return true;
+            throw new NotImplementedException();
         }
 
-        public void Reset()
+        public IEnumerator GetEnumerator()
         {
-            current = 0;
+            throw new NotImplementedException();
         }
     }
 }
