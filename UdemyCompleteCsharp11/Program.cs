@@ -178,18 +178,63 @@ namespace UdemyCompleteCsharp11
 
     //    }
     //}
-    public class Program //structs
-    {
-        struct Example : INotifyPropertyChanged
-        {
-            string Ex;
-            int Ex2;
+    //public class Program //structs
+    //{
+    //    struct Example : INotifyPropertyChanged
+    //    {
+    //        string Ex;
+    //        int Ex2;
 
-            public event PropertyChangedEventHandler PropertyChanged;
-        }
+    //        public event PropertyChangedEventHandler PropertyChanged;
+    //    }
+    //    public static void Main(string[] args)
+    //    {
+
+
+    //    }
+    //}
+
+    public class Program // enums
+    {
+        enum Weekday { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}
+        static Weekday dayOfTheWeek = Weekday.Wednesday;
         public static void Main(string[] args)
         {
+            Console.WriteLine(Enum.GetName(typeof(Weekday),6));
+            foreach(string s in Enum.GetNames(typeof(Weekday)))
+            {
+                Console.WriteLine(s);
+            }
+            foreach(int i in Enum.GetValues(typeof(Weekday)))
+            {
+                Console.WriteLine(i);
+            }
 
+            switch (dayOfTheWeek)
+            {
+                case Weekday.Monday:
+                    Console.WriteLine("It's Monday");
+                    break;
+                case Weekday.Tuesday:
+                    Console.WriteLine("It's Tuesday");
+                    break;
+                case Weekday.Wednesday:
+                    Console.WriteLine("It's Wednesday");
+                    break;
+                case Weekday.Thursday:
+                    Console.WriteLine("It's Thursday");
+                    break;
+                case Weekday.Friday:
+                    Console.WriteLine("It's Friday");
+                    break;
+                case Weekday.Saturday:
+                    Console.WriteLine("It's Saturday");
+                    break;
+                case Weekday.Sunday:
+                    Console.WriteLine("It's Sunday");
+                    break;
+
+            }
 
         }
     }
