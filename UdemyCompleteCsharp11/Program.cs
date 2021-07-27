@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace UdemyCompleteCsharp11
 {
-    //class Program
+    //class Program   //Arrays
     //{
     //    //4 ways to create an array in C#
     //    static string[] strings = new string[3];
@@ -25,7 +25,7 @@ namespace UdemyCompleteCsharp11
     //    }
     //}
 
-    class Program
+    class Program  //Lists
     {
         static List<int> numbers = new List<int>() { 1, 3, 5, 4, 2 };
         public static void Main(string[] args)
@@ -44,6 +44,17 @@ namespace UdemyCompleteCsharp11
             numbers.Insert(2, 20);
             List<int> subList = new List<int>() { 19, 18, 17, 16 };
             numbers.InsertRange(3, subList);
+            bool areNumbersLessThan6 = numbers.TrueForAll(x => x < 6);
+            Console.WriteLine(areNumbersLessThan6);
+            numbers.Sort();
+            numbers.RemoveRange(6, 5);
+            foreach (int i in numbers)
+            {
+                Console.WriteLine(i);
+            }
+            bool areNumbersLessThan7 = numbers.TrueForAll(x => x < 7);
+            Console.WriteLine(areNumbersLessThan7);
+            numbers.Reverse();
             foreach (int i in numbers)
             {
                 Console.WriteLine(i);
