@@ -70,51 +70,99 @@ namespace UdemyCompleteCsharp11
             //s.Push("cat");
             //s.Push("ant");
             //Console.WriteLine("The stack contains " + s.Count + " elements.");
-            Console.WriteLine(IsBalanced("{[<>]}"));
-            Console.WriteLine(IsBalanced("{[<>)]}"));
-            Console.WriteLine(IsBalanced("{(<>]}"));
+            //Console.WriteLine(IsBalanced("{[<>]}"));
+            //Console.WriteLine(IsBalanced("{[<>)]}"));
+            //Console.WriteLine(IsBalanced("{(<>]}"));
+
+            Stack stack = new Stack();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+
+            Console.WriteLine(stack.Pop());  //last in 3
+            Console.WriteLine(stack.Pop());  //2
+            Console.WriteLine(stack.Pop());  //1
         }
         //Balanced Bracket Problem
 
-        private static bool IsBalanced(string inputString)
+        //private static bool IsBalanced(string inputString)
+        //{
+        //    Stack<char> stackOfClosingBraces = new Stack<char>();
+        //    Stack<char> stackOfOpeningBraces = new Stack<char>();
+        //    foreach (char c in inputString)
+        //    {
+        //        if (c == '}' || c == ']' || c == ')' || c == '>')
+        //        {
+        //            stackOfClosingBraces.Push(c);
+        //        }
+        //    }
+        //    for(int i = inputString.Length - 1; i >= 0; i--)
+        //    {
+        //        if (inputString[i] == '{' || inputString[i] == '[' || inputString[i] == '(' || inputString[i] == '<')
+        //        {
+        //            stackOfOpeningBraces.Push(inputString[i]);
+        //        }
+        //    }
+        //    if(stackOfClosingBraces.Count != stackOfOpeningBraces.Count)
+        //    {
+        //        return false;
+        //    }
+        //    while(stackOfClosingBraces.Count != 0)
+        //    {
+        //        char currentClosingBrace = stackOfClosingBraces.Pop(); //remove top char in closing braces stack
+        //        char currentOpeningBrace = stackOfOpeningBraces.Pop(); //remove top char in opening braces stack
+        //        if((currentOpeningBrace == '(' &&  currentClosingBrace == ')') ||
+        //            (currentOpeningBrace == '[' && currentClosingBrace == ']') ||
+        //            (currentOpeningBrace == '{' && currentClosingBrace == '}') ||
+        //            (currentOpeningBrace == '<' && currentClosingBrace == '>'))
+        //        {
+        //            continue;
+        //        }
+        //        else
+        //        {
+        //            return false;
+        //        }
+        //    }
+        //    return true;
+        //}
+    public class Stack
         {
-            Stack<char> stackOfClosingBraces = new Stack<char>();
-            Stack<char> stackOfOpeningBraces = new Stack<char>();
-            foreach (char c in inputString)
+            const int MAX = 1000;   //maximum number of elements the stack can hold
+            int top;                //index of top element in stack
+            object[] stack = new object[MAX];   //object array to hold elements in stack
+
+            public Stack()          //constructor
             {
-                if (c == '}' || c == ']' || c == ')' || c == '>')
+                top = -1;           //indicates stack is empty
+            }
+
+            public void Push(object obj)
+            {
+                if (top < MAX)  //can stack hold object
                 {
-                    stackOfClosingBraces.Push(c);
+                    stack[++top] = obj;
                 }
             }
-            for(int i = inputString.Length - 1; i >= 0; i--)
+
+            public object Pop()
             {
-                if (inputString[i] == '{' || inputString[i] == '[' || inputString[i] == '(' || inputString[i] == '<')
+                if (top >= 0)  //is stack empty
                 {
-                    stackOfOpeningBraces.Push(inputString[i]);
-                }
-            }
-            if(stackOfClosingBraces.Count != stackOfOpeningBraces.Count)
-            {
-                return false;
-            }
-            while(stackOfClosingBraces.Count != 0)
-            {
-                char currentClosingBrace = stackOfClosingBraces.Pop(); //remove top char in closing braces stack
-                char currentOpeningBrace = stackOfOpeningBraces.Pop(); //remove top char in opening braces stack
-                if((currentOpeningBrace == '(' &&  currentClosingBrace == ')') ||
-                    (currentOpeningBrace == '[' && currentClosingBrace == ']') ||
-                    (currentOpeningBrace == '{' && currentClosingBrace == '}') ||
-                    (currentOpeningBrace == '<' && currentClosingBrace == '>'))
-                {
-                    continue;
+                    object o = stack[top];
+                    top--;
+                    return o;
                 }
                 else
                 {
-                    return false;
+                    return -1; //indicates stack is empty
                 }
             }
-            return true;
+
+            public object Peek()
+            {
+                return stack[top];
+            }
+
         }
     }
 }
