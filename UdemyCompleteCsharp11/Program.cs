@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace UdemyCompleteCsharp11
 {
@@ -165,15 +166,30 @@ namespace UdemyCompleteCsharp11
 
     //    }
     //}
-    public class Program //queues
+    //public class Program //queues
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        Queue<string> queue = new Queue<string>();
+    //        queue.Enqueue("a");
+    //        queue.Enqueue("b"); 
+    //        queue.Enqueue("c");
+    //        Console.WriteLine(queue.Dequeue());
+
+    //    }
+    //}
+    public class Program //structs
     {
+        struct Example : INotifyPropertyChanged
+        {
+            string Ex;
+            int Ex2;
+
+            public event PropertyChangedEventHandler PropertyChanged;
+        }
         public static void Main(string[] args)
         {
-            Queue<string> queue = new Queue<string>();
-            queue.Enqueue("a");
-            queue.Enqueue("b"); 
-            queue.Enqueue("c");
-            Console.WriteLine(queue.Dequeue());
+
 
         }
     }
