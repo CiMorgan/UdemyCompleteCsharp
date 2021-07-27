@@ -25,40 +25,83 @@ namespace UdemyCompleteCsharp11
     //    }
     //}
 
-    class Program  //Lists
+    //class Program  //Lists
+    //{
+    //    static List<int> numbers = new List<int>() { 1, 3, 5, 4, 2 };
+    //    public static void Main(string[] args)
+    //    {
+    //        Console.WriteLine(numbers.Count);
+    //        numbers.Capacity=10; //limits list to 10 elements
+    //        numbers.Add(6); //adds 6 to end of list
+    //        numbers.Sort();
+    //        foreach(int i in numbers)
+    //        {
+    //            Console.WriteLine(i);
+    //        }
+    //        Console.WriteLine("Index of element 5 is: " + numbers.BinarySearch(5));
+    //        Console.WriteLine(numbers.Contains(3));
+    //        Console.WriteLine(numbers.Contains(20));
+    //        numbers.Insert(2, 20);
+    //        List<int> subList = new List<int>() { 19, 18, 17, 16 };
+    //        numbers.InsertRange(3, subList);
+    //        bool areNumbersLessThan6 = numbers.TrueForAll(x => x < 6);
+    //        Console.WriteLine(areNumbersLessThan6);
+    //        numbers.Sort();
+    //        numbers.RemoveRange(6, 5);
+    //        foreach (int i in numbers)
+    //        {
+    //            Console.WriteLine(i);
+    //        }
+    //        bool areNumbersLessThan7 = numbers.TrueForAll(x => x < 7);
+    //        Console.WriteLine(areNumbersLessThan7);
+    //        numbers.Reverse();
+    //        foreach (int i in numbers)
+    //        {
+    //            Console.WriteLine(i);
+    //        }
+    //    }
+    //}
+
+    class Program //stacks
     {
-        static List<int> numbers = new List<int>() { 1, 3, 5, 4, 2 };
         public static void Main(string[] args)
         {
-            Console.WriteLine(numbers.Count);
-            numbers.Capacity=10; //limits list to 10 elements
-            numbers.Add(6); //adds 6 to end of list
-            numbers.Sort();
-            foreach(int i in numbers)
+            //Stack<string> s = new Stack<string>();
+            //s.Push("cat");
+            //s.Push("ant");
+            //Console.WriteLine("The stack contains " + s.Count + " elements.");
+        }
+        //Balanced Bracket Problem
+
+        private static bool IsBalanced(string inputString)
+        {
+            Stack<char> stackOfClosingBraces = new Stack<char>();
+            Stack<char> stackOfOpeningBraces = new Stack<char>();
+            foreach (char c in inputString)
             {
-                Console.WriteLine(i);
+                if (c == '}' || c == ']' || c == ')' || c == '>')
+                {
+                    stackOfClosingBraces.Push(c);
+                }
             }
-            Console.WriteLine("Index of element 5 is: " + numbers.BinarySearch(5));
-            Console.WriteLine(numbers.Contains(3));
-            Console.WriteLine(numbers.Contains(20));
-            numbers.Insert(2, 20);
-            List<int> subList = new List<int>() { 19, 18, 17, 16 };
-            numbers.InsertRange(3, subList);
-            bool areNumbersLessThan6 = numbers.TrueForAll(x => x < 6);
-            Console.WriteLine(areNumbersLessThan6);
-            numbers.Sort();
-            numbers.RemoveRange(6, 5);
-            foreach (int i in numbers)
+            for (int i = inputString.Length - 1; i <= 0; i--)
             {
-                Console.WriteLine(i);
+                if (inputString[i] == '{' || inputString[i] == '[' || inputString[i] == '(' || inputString[i] == '<')
+                {
+                    stackOfOpeningBraces.Push(inputString[i]);
+                }
             }
-            bool areNumbersLessThan7 = numbers.TrueForAll(x => x < 7);
-            Console.WriteLine(areNumbersLessThan7);
-            numbers.Reverse();
-            foreach (int i in numbers)
+            if(stackOfClosingBraces.Count != stackOfOpeningBraces.Count)
             {
-                Console.WriteLine(i);
+                return false;
             }
+            while(stackOfClosingBraces.Count != 0)
+            {
+                char currentClosingBrace = stackOfClosingBraces.Pop(); //remove top char in closing braces stack
+                char currentOpeningBrace = stackOfOpeningBraces.Pop(); //remove top char in opening braces stack
+            }
+
+
         }
     }
 }
