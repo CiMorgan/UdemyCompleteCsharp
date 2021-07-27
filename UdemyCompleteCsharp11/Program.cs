@@ -11,10 +11,16 @@ namespace UdemyCompleteCsharp11
         static string[] strings3 = { "dog", "cat", "elephant" }; //will need to use the new keyword if initialized later
         public static void Main(string[] args)
         {
+            strings1[1] = "not cat";
+            Array.Sort(strings2);
             Console.WriteLine(strings[1]);
             Console.WriteLine(strings1[1]);
             Console.WriteLine(strings2[1]);
             Console.WriteLine(strings3[1]);
+            foreach(string str in strings2)
+            {
+                Console.WriteLine(str);
+            }
         }
     }
 }
