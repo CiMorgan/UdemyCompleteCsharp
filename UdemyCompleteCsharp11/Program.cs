@@ -70,6 +70,9 @@ namespace UdemyCompleteCsharp11
             //s.Push("cat");
             //s.Push("ant");
             //Console.WriteLine("The stack contains " + s.Count + " elements.");
+            Console.WriteLine(IsBalanced("{[<>]}"));
+            Console.WriteLine(IsBalanced("{[<>)]}"));
+            Console.WriteLine(IsBalanced("{(<>]}"));
         }
         //Balanced Bracket Problem
 
@@ -84,7 +87,7 @@ namespace UdemyCompleteCsharp11
                     stackOfClosingBraces.Push(c);
                 }
             }
-            for (int i = inputString.Length - 1; i <= 0; i--)
+            for(int i = inputString.Length - 1; i >= 0; i--)
             {
                 if (inputString[i] == '{' || inputString[i] == '[' || inputString[i] == '(' || inputString[i] == '<')
                 {
@@ -99,9 +102,19 @@ namespace UdemyCompleteCsharp11
             {
                 char currentClosingBrace = stackOfClosingBraces.Pop(); //remove top char in closing braces stack
                 char currentOpeningBrace = stackOfOpeningBraces.Pop(); //remove top char in opening braces stack
+                if((currentOpeningBrace == '(' &&  currentClosingBrace == ')') ||
+                    (currentOpeningBrace == '[' && currentClosingBrace == ']') ||
+                    (currentOpeningBrace == '{' && currentClosingBrace == '}') ||
+                    (currentOpeningBrace == '<' && currentClosingBrace == '>'))
+                {
+                    continue;
+                }
+                else
+                {
+                    return false;
+                }
             }
-
-
+            return true;
         }
     }
 }
