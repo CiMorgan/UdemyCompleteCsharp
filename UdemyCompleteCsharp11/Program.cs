@@ -196,16 +196,16 @@ namespace UdemyCompleteCsharp11
 
     public class Program // enums
     {
-        enum Weekday { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}
+        enum Weekday { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
         static Weekday dayOfTheWeek = Weekday.Wednesday;
         public static void Main(string[] args)
         {
-            Console.WriteLine(Enum.GetName(typeof(Weekday),6));
-            foreach(string s in Enum.GetNames(typeof(Weekday)))
+            Console.WriteLine(Enum.GetName(typeof(Weekday), 6));
+            foreach (string s in Enum.GetNames(typeof(Weekday)))
             {
                 Console.WriteLine(s);
             }
-            foreach(int i in Enum.GetValues(typeof(Weekday)))
+            foreach (int i in Enum.GetValues(typeof(Weekday)))
             {
                 Console.WriteLine(i);
             }
@@ -238,4 +238,6 @@ namespace UdemyCompleteCsharp11
 
         }
     }
+
+}
 }
