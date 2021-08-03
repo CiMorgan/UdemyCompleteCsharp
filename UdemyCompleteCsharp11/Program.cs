@@ -294,25 +294,40 @@ namespace UdemyCompleteCsharp11
     //    }
     //}
 
-    public class Example  //Sorted Lists
+    //public class Example  //Sorted Lists
+    //{
+    //    static SortedList<string, int> sortedList = new SortedList<string, int>() { { "key1", 1 }, { "key2", 2 }, { "key3", 3 } };
+    //    public static void Main(string[] args)
+    //    {
+    //        sortedList.Capacity = 6;
+    //        Console.WriteLine("The sorted list's capacity is: " + sortedList.Capacity);
+    //        Console.WriteLine("The sorted list's count is: " + sortedList.Count);
+
+    //        foreach(string key in sortedList.Keys)
+    //        {
+    //            Console.WriteLine(key);
+    //        }
+
+    //        foreach (int val in sortedList.Values)
+    //        {
+    //            Console.WriteLine(val);
+    //        }
+    //    }
+    //}
+
+    public class Example  //Sorted Dictionaries
     {
-        static SortedList<string, int> sortedList = new SortedList<string, int>() { { "key1", 1 }, { "key2", 2 }, { "key3", 3 } };
+        static SortedDictionary<string, string> sortedDictionry = new SortedDictionary<string, string>() { { "key1", "value1" }, { "key2", "value2" }, { "key3", "value3" } };
         public static void Main(string[] args)
         {
-            sortedList.Capacity = 6;
-            Console.WriteLine("The sorted list's capacity is: " + sortedList.Capacity);
-            Console.WriteLine("The sorted list's count is: " + sortedList.Count);
+            sortedDictionry.Add("key4", "value4");
+        
+            Console.WriteLine(sortedDictionry.ContainsKey("key2"));
+            Console.WriteLine(sortedDictionry.ContainsKey("key5"));
 
-            foreach(string key in sortedList.Keys)
-            {
-                Console.WriteLine(key);
-            }
-
-            foreach (int val in sortedList.Values)
-            {
-                Console.WriteLine(val);
-            }
         }
+        
+
     }
 }
 
