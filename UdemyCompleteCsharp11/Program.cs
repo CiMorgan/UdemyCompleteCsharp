@@ -270,27 +270,48 @@ namespace UdemyCompleteCsharp11
     //    }
     //}
 
-    public class Example  //HashSets
+    //public class Example  //HashSets
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        HashSet<string> letters1 = new HashSet<string>() { "a", "b", "c" };
+    //        HashSet<string> letters2 = new HashSet<string>() { "d", "e", "f" };
+    //        HashSet<string> letters3 = new HashSet<string>() { "e", "f", "g", "h" };
+    //        letters1.UnionWith(letters2);
+    //        foreach (string s in letters1)
+    //        {
+    //            Console.WriteLine(s);
+    //        }
+
+    //        letters2.IntersectWith(letters3);
+    //        foreach (string s in letters2)
+    //        {
+    //            Console.WriteLine(s);
+    //        }
+
+
+
+    //    }
+    //}
+
+    public class Example  //Sorted Lists
     {
+        static SortedList<string, int> sortedList = new SortedList<string, int>() { { "key1", 1 }, { "key2", 2 }, { "key3", 3 } };
         public static void Main(string[] args)
         {
-            HashSet<string> letters1 = new HashSet<string>() { "a", "b", "c" };
-            HashSet<string> letters2 = new HashSet<string>() { "d", "e", "f" };
-            HashSet<string> letters3 = new HashSet<string>() { "e", "f", "g", "h" };
-            letters1.UnionWith(letters2);
-            foreach (string s in letters1)
+            sortedList.Capacity = 6;
+            Console.WriteLine("The sorted list's capacity is: " + sortedList.Capacity);
+            Console.WriteLine("The sorted list's count is: " + sortedList.Count);
+
+            foreach(string key in sortedList.Keys)
             {
-                Console.WriteLine(s);
+                Console.WriteLine(key);
             }
 
-            letters2.IntersectWith(letters3);
-            foreach (string s in letters2)
+            foreach (int val in sortedList.Values)
             {
-                Console.WriteLine(s);
+                Console.WriteLine(val);
             }
-
-
-
         }
     }
 }
