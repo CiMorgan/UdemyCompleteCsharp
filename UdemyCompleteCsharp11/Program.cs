@@ -194,50 +194,88 @@ namespace UdemyCompleteCsharp11
     //    }
     //}
 
-    public class Program // enums
+    //public class Program // enums
+    //{
+    //    enum Weekday { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
+    //    static Weekday dayOfTheWeek = Weekday.Wednesday;
+    //    public static void Main(string[] args)
+    //    {
+    //        Console.WriteLine(Enum.GetName(typeof(Weekday), 6));
+    //        foreach (string s in Enum.GetNames(typeof(Weekday)))
+    //        {
+    //            Console.WriteLine(s);
+    //        }
+    //        foreach (int i in Enum.GetValues(typeof(Weekday)))
+    //        {
+    //            Console.WriteLine(i);
+    //        }
+
+    //        switch (dayOfTheWeek)
+    //        {
+    //            case Weekday.Monday:
+    //                Console.WriteLine("It's Monday");
+    //                break;
+    //            case Weekday.Tuesday:
+    //                Console.WriteLine("It's Tuesday");
+    //                break;
+    //            case Weekday.Wednesday:
+    //                Console.WriteLine("It's Wednesday");
+    //                break;
+    //            case Weekday.Thursday:
+    //                Console.WriteLine("It's Thursday");
+    //                break;
+    //            case Weekday.Friday:
+    //                Console.WriteLine("It's Friday");
+    //                break;
+    //            case Weekday.Saturday:
+    //                Console.WriteLine("It's Saturday");
+    //                break;
+    //            case Weekday.Sunday:
+    //                Console.WriteLine("It's Sunday");
+    //                break;
+
+    //        }
+
+    //    }
+    //}
+
+    public class MainClass   //Dictionaries - uses key vakue pairs
     {
-        enum Weekday { Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday }
-        static Weekday dayOfTheWeek = Weekday.Wednesday;
         public static void Main(string[] args)
         {
-            Console.WriteLine(Enum.GetName(typeof(Weekday), 6));
-            foreach (string s in Enum.GetNames(typeof(Weekday)))
+            Dictionary<string, string> dictionary = new Dictionary<string, string>();
+            dictionary.Add("key1", "value1");
+            dictionary.Add("key2", "value2");
+            dictionary.Add("key3", "value3");
+            dictionary.Add("key4", "value4");
+            Console.WriteLine(dictionary.Count);
+            //can't iterate over dictionary but can iterate over keys or values
+            foreach(string key in dictionary.Keys)
             {
-                Console.WriteLine(s);
-            }
-            foreach (int i in Enum.GetValues(typeof(Weekday)))
-            {
-                Console.WriteLine(i);
+                Console.WriteLine(key);
             }
 
-            switch (dayOfTheWeek)
+            foreach (string value in dictionary.Values)
             {
-                case Weekday.Monday:
-                    Console.WriteLine("It's Monday");
-                    break;
-                case Weekday.Tuesday:
-                    Console.WriteLine("It's Tuesday");
-                    break;
-                case Weekday.Wednesday:
-                    Console.WriteLine("It's Wednesday");
-                    break;
-                case Weekday.Thursday:
-                    Console.WriteLine("It's Thursday");
-                    break;
-                case Weekday.Friday:
-                    Console.WriteLine("It's Friday");
-                    break;
-                case Weekday.Saturday:
-                    Console.WriteLine("It's Saturday");
-                    break;
-                case Weekday.Sunday:
-                    Console.WriteLine("It's Sunday");
-                    break;
-
+                Console.WriteLine(value);
             }
+            Console.WriteLine(dictionary["key2"]);
+
+            string val1 = "";
+            string val2 = "";
+            dictionary.TryGetValue("key3", out val1);
+            dictionary.TryGetValue("key5", out val2);
+            Console.WriteLine(val2);
+            Console.WriteLine(val1);
+
+
+
+
+
 
         }
     }
+}
 
-}
-}
+
+
