@@ -239,37 +239,55 @@ namespace UdemyCompleteCsharp11
     //    }
     //}
 
-    public class MainClass   //Dictionaries - uses key vakue pairs
+    //public class MainClass   //Dictionaries - uses key vakue pairs
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        Dictionary<string, string> dictionary = new Dictionary<string, string>();
+    //        dictionary.Add("key1", "value1");
+    //        dictionary.Add("key2", "value2");
+    //        dictionary.Add("key3", "value3");
+    //        dictionary.Add("key4", "value4");
+    //        Console.WriteLine(dictionary.Count);
+    //        //can't iterate over dictionary but can iterate over keys or values
+    //        foreach(string key in dictionary.Keys)
+    //        {
+    //            Console.WriteLine(key);
+    //        }
+
+    //        foreach (string value in dictionary.Values)
+    //        {
+    //            Console.WriteLine(value);
+    //        }
+    //        Console.WriteLine(dictionary["key2"]);
+
+    //        string val1 = "";
+    //        string val2 = "";
+    //        dictionary.TryGetValue("key3", out val1);
+    //        dictionary.TryGetValue("key5", out val2);
+    //        Console.WriteLine(val2);
+    //        Console.WriteLine(val1);
+    //    }
+    //}
+
+    public class Example  //HashSets
     {
         public static void Main(string[] args)
         {
-            Dictionary<string, string> dictionary = new Dictionary<string, string>();
-            dictionary.Add("key1", "value1");
-            dictionary.Add("key2", "value2");
-            dictionary.Add("key3", "value3");
-            dictionary.Add("key4", "value4");
-            Console.WriteLine(dictionary.Count);
-            //can't iterate over dictionary but can iterate over keys or values
-            foreach(string key in dictionary.Keys)
+            HashSet<string> letters1 = new HashSet<string>() { "a", "b", "c" };
+            HashSet<string> letters2 = new HashSet<string>() { "d", "e", "f" };
+            HashSet<string> letters3 = new HashSet<string>() { "e", "f", "g", "h" };
+            letters1.UnionWith(letters2);
+            foreach (string s in letters1)
             {
-                Console.WriteLine(key);
+                Console.WriteLine(s);
             }
 
-            foreach (string value in dictionary.Values)
+            letters2.IntersectWith(letters3);
+            foreach (string s in letters2)
             {
-                Console.WriteLine(value);
+                Console.WriteLine(s);
             }
-            Console.WriteLine(dictionary["key2"]);
-
-            string val1 = "";
-            string val2 = "";
-            dictionary.TryGetValue("key3", out val1);
-            dictionary.TryGetValue("key5", out val2);
-            Console.WriteLine(val2);
-            Console.WriteLine(val1);
-
-
-
 
 
 
