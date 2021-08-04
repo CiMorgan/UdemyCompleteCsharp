@@ -315,20 +315,28 @@ namespace UdemyCompleteCsharp11
     //    }
     //}
 
-    public class Example  //Sorted Dictionaries
+    //public class Example  //Sorted Dictionaries
+    //{
+    //    static SortedDictionary<string, string> sortedDictionry = new SortedDictionary<string, string>() { { "key1", "value1" }, { "key2", "value2" }, { "key3", "value3" } };
+    //    public static void Main(string[] args)
+    //    {
+    //        sortedDictionry.Add("key4", "value4");
+
+    //        Console.WriteLine(sortedDictionry.ContainsKey("key2"));
+    //        Console.WriteLine(sortedDictionry.ContainsKey("key5"));
+
+    //    }
+
+
+    //}
+    public class Example  //Sorted Sets
     {
-        static SortedDictionary<string, string> sortedDictionry = new SortedDictionary<string, string>() { { "key1", "value1" }, { "key2", "value2" }, { "key3", "value3" } };
         public static void Main(string[] args)
         {
-            sortedDictionry.Add("key4", "value4");
-        
-            Console.WriteLine(sortedDictionry.ContainsKey("key2"));
-            Console.WriteLine(sortedDictionry.ContainsKey("key5"));
 
         }
-        
-
     }
+
 }
 
 
