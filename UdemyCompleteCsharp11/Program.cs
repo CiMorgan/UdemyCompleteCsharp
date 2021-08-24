@@ -360,19 +360,68 @@ namespace UdemyCompleteCsharp11
 
     //    }
     //}
-    public class Example  //Tuples
+    //public class Example  //Tuples
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        Tuple<int> tuple = Tuple.Create(1);   //2 ways to create tuples
+    //        Tuple<int> tuple2 = new Tuple<int>(3);
+    //        Tuple<int, int, int> tuple3 = new Tuple<int, int, int>(1, 3, 5);
+    //        Tuple<int, string, bool> tuple4 = new Tuple<int, string, bool>(7, "Hello World!", true);
+
+    //        Console.WriteLine(tuple4.Item2);
+    //    }
+    //}
+    public class Example  //Linked Lists
     {
+        //create singly linked list
+        public class LinkedList
+        {
+            public class Node
+            {
+                public Node next;
+                public object data;
+            }
+
+            private Node root;
+            public Node First { get; { return root; } }
+            public Node Last
+            {
+                get
+                {
+                    Node currentNode = root;  //puts us at start of list
+                    if(currentNode == null)
+                    {
+                        return null;
+                    }
+                    while(currentNode != null)
+                    {
+                        currentNode = currentNode.next;
+                    }
+
+                    return currentNode;
+                }
+            }
+            public void Append(object value)
+            {
+                Node node = new Node { data = value };
+                if (root == null)
+                {
+                    root = node;
+                }
+                else
+                {
+                    Last.next = node;
+                }
+            }
+
+
+        }
         public static void Main(string[] args)
         {
-            Tuple<int> tuple = Tuple.Create(1);   //2 ways to create tuples
-            Tuple<int> tuple2 = new Tuple<int>(3);
-            Tuple<int, int, int> tuple3 = new Tuple<int, int, int>(1, 3, 5);
-            Tuple<int, string, bool> tuple4 = new Tuple<int, string, bool>(7, "Hello World!", true);
 
-            Console.WriteLine(tuple4.Item2);
         }
     }
-
 }
 
 
