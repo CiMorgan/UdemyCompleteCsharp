@@ -329,35 +329,47 @@ namespace UdemyCompleteCsharp11
 
 
     //}
-    public class Example  //Sorted Sets
+    //public class Example  //Sorted Sets
+    //{
+    //    static SortedSet<int> sortedSet = new SortedSet<int>();
+    //    public static void Main(string[] args)
+    //    {
+    //        sortedSet.Add(3);
+    //        sortedSet.Add(1);
+    //        sortedSet.Add(-1);
+    //        sortedSet.Add(0);
+
+    //        foreach (int i in sortedSet)
+    //        {
+    //            Console.WriteLine(i);
+    //        }
+
+    //        if (sortedSet.Contains(1))
+    //        {
+    //            Console.WriteLine("It contains 1.");
+    //        }
+    //        if (!sortedSet.Contains(5))
+    //        {
+    //            Console.WriteLine("It does not contain 5.");
+    //        }
+
+    //        SortedSet<int> set1 = new SortedSet<int>() { 1, 3};
+    //        Console.WriteLine(sortedSet.IsSubsetOf(set1));  //false
+    //        Console.WriteLine(sortedSet.IsSupersetOf(set1));  //true
+
+
+    //    }
+    //}
+    public class Example  //Tuples
     {
-        static SortedSet<int> sortedSet = new SortedSet<int>();
         public static void Main(string[] args)
         {
-            sortedSet.Add(3);
-            sortedSet.Add(1);
-            sortedSet.Add(-1);
-            sortedSet.Add(0);
+            Tuple<int> tuple = Tuple.Create(1);   //2 ways to create tuples
+            Tuple<int> tuple2 = new Tuple<int>(3);
+            Tuple<int, int, int> tuple3 = new Tuple<int, int, int>(1, 3, 5);
+            Tuple<int, string, bool> tuple4 = new Tuple<int, string, bool>(7, "Hello World!", true);
 
-            foreach (int i in sortedSet)
-            {
-                Console.WriteLine(i);
-            }
-
-            if (sortedSet.Contains(1))
-            {
-                Console.WriteLine("It contains 1.");
-            }
-            if (!sortedSet.Contains(5))
-            {
-                Console.WriteLine("It does not contain 5.");
-            }
-
-            SortedSet<int> set1 = new SortedSet<int>() { 1, 3};
-            Console.WriteLine(sortedSet.IsSubsetOf(set1));  //false
-            Console.WriteLine(sortedSet.IsSupersetOf(set1));  //true
-            
-
+            Console.WriteLine(tuple4.Item2);
         }
     }
 
