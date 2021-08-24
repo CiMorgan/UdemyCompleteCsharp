@@ -372,76 +372,92 @@ namespace UdemyCompleteCsharp11
     //        Console.WriteLine(tuple4.Item2);
     //    }
     //}
-    public class Example  //Linked Lists
+    //public class Example  //Linked Lists - singly
+    //{
+    //    //create singly linked list
+    //    public class LinkedList
+    //    {
+    //        public class Node
+    //        {
+    //            public Node next;
+    //            public object data;
+    //        }
+
+    //        private Node root;
+    //        public Node First { get; { return root; } }
+    //        public Node Last
+    //        {
+    //            get
+    //            {
+    //                Node currentNode = root;  //puts us at start of list
+    //                if(currentNode == null)
+    //                {
+    //                    return null;
+    //                }
+    //                while(currentNode != null)
+    //                {
+    //                    currentNode = currentNode.next;
+    //                }
+
+    //                return currentNode;
+    //            }
+    //        }
+    //        public void Append(object value)
+    //        {
+    //            Node node = new Node { data = value };
+    //            if (root == null)
+    //            {
+    //                root = node;
+    //            }
+    //            else
+    //            {
+    //                Last.next = node;
+    //            }
+    //        }
+    //        public void Delete (Node node)
+    //        {
+    //            if (root == node)
+    //            {
+    //                root = node.next;
+    //                node.next = null;
+    //            }
+    //            else
+    //            {
+    //                Node current = root;
+    //                while (current.next != null)
+    //                {
+    //                    if (current.next == node)
+    //                    {
+    //                        current.next = node.next;
+    //                        node.next = null;
+    //                        break;
+    //                    }
+    //                    current = current.next;
+    //                }
+    //            }
+    //        }
+
+
+    //    }
+    //    public static void Main(string[] args)
+    //    {
+
+    //    }
+    //}
+    public class Example //Linked Lists - Doubly
     {
-        //create singly linked list
-        public class LinkedList
-        {
-            public class Node
-            {
-                public Node next;
-                public object data;
-            }
-
-            private Node root;
-            public Node First { get; { return root; } }
-            public Node Last
-            {
-                get
-                {
-                    Node currentNode = root;  //puts us at start of list
-                    if(currentNode == null)
-                    {
-                        return null;
-                    }
-                    while(currentNode != null)
-                    {
-                        currentNode = currentNode.next;
-                    }
-
-                    return currentNode;
-                }
-            }
-            public void Append(object value)
-            {
-                Node node = new Node { data = value };
-                if (root == null)
-                {
-                    root = node;
-                }
-                else
-                {
-                    Last.next = node;
-                }
-            }
-            public void Delete (Node node)
-            {
-                if (root == node)
-                {
-                    root = node.next;
-                    node.next = null;
-                }
-                else
-                {
-                    Node current = root;
-                    while (current.next != null)
-                    {
-                        if (current.next == node)
-                        {
-                            current.next = node.next;
-                            node.next = null;
-                            break;
-                        }
-                        current = current.next;
-                    }
-                }
-            }
-
-
-        }
+        static LinkedList<string> linkedList = new LinkedList<string>(); 
         public static void Main(string[] args)
         {
-
+            linkedList.AddFirst("root");
+            linkedList.AddAfter(linkedList.First, "element");
+            linkedList.AddBefore(linkedList.First, "new root");
+            linkedList.AddAfter(linkedList.Last, "element 2");
+            linkedList.AddLast("last element");
+            foreach(string a in linkedList)
+            {
+                Console.WriteLine(a);
+            }
         }
     }
 }
