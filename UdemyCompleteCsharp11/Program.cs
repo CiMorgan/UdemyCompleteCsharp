@@ -414,6 +414,28 @@ namespace UdemyCompleteCsharp11
                     Last.next = node;
                 }
             }
+            public void Delete (Node node)
+            {
+                if (root == node)
+                {
+                    root = node.next;
+                    node.next = null;
+                }
+                else
+                {
+                    Node current = root;
+                    while (current.next != null)
+                    {
+                        if (current.next == node)
+                        {
+                            current.next = node.next;
+                            node.next = null;
+                            break;
+                        }
+                        current = current.next;
+                    }
+                }
+            }
 
 
         }
