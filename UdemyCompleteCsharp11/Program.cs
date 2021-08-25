@@ -444,22 +444,70 @@ namespace UdemyCompleteCsharp11
 
     //    }
     //}
-    public class Example //Linked Lists - Doubly
+    //public class Example //Linked Lists - Doubly
+    //{
+    //    static LinkedList<string> linkedList = new LinkedList<string>(); 
+    //    public static void Main(string[] args)
+    //    {
+    //        linkedList.AddFirst("root");
+    //        linkedList.AddAfter(linkedList.First, "element");
+    //        linkedList.AddBefore(linkedList.First, "new root");
+    //        linkedList.AddAfter(linkedList.Last, "element 2");
+    //        linkedList.AddLast("last element");
+    //        foreach(string a in linkedList)
+    //        {
+    //            Console.WriteLine(a);
+    //        }
+    //    }
+    //}
+
+    public class Example //Trees
     {
-        static LinkedList<string> linkedList = new LinkedList<string>(); 
         public static void Main(string[] args)
         {
-            linkedList.AddFirst("root");
-            linkedList.AddAfter(linkedList.First, "element");
-            linkedList.AddBefore(linkedList.First, "new root");
-            linkedList.AddAfter(linkedList.Last, "element 2");
-            linkedList.AddLast("last element");
-            foreach(string a in linkedList)
+
+        }
+
+        class TreeNode<T>  //T is a place holder for the type (int, string) of node
+        {
+            T value;
+            TreeNode<T> left = null;
+            TreeNode<T> right = null;
+
+            public TreeNode(T value)
             {
-                Console.WriteLine(a);
+                this.value = value;
             }
+            public TreeNode<T> GetLeft()
+            {
+                return left;
+            }
+            public TreeNode<T> GetRight()
+            {
+                return right;
+            }
+            public T GetValue()
+            {
+                return value;
+            }
+            public void SetValue(T value)
+            {
+                this.value=value;
+            }
+            public void SetRight(TreeNode<T> node)
+            {
+                right = node;
+            }
+            public void SetLeft(TreeNode<T> node)
+            {
+                left = node;
+            }
+
+
         }
     }
+        
+        
 }
 
 
