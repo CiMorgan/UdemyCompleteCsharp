@@ -481,9 +481,59 @@ namespace UdemyCompleteCsharp11
             //e.SetLeft(f);
             //e.SetRight(g);
 
-            Console.WriteLine(Program<string>.GetHeight(a));
+            //PreOrder(a);
+            //InOrder(a);
+            //PostOrder(a);
+            Console.WriteLine(IsBalanced(a));
+
+            //Console.WriteLine(Program<string>.GetHeight(a));
         }
-        
+        static void PreOrder(TreeNode<string> root)  //get root first followed by left node and right node
+        {
+            if(root != null)
+            {
+                Console.WriteLine(root.GetValue().ToString() + " ");
+                PreOrder(root.GetLeft());
+                PreOrder(root.GetRight());
+            }
+        }
+
+        static void InOrder(TreeNode<string> root)  //get left node first followed by root and right node
+        {
+            if (root != null)
+            {
+                InOrder(root.GetLeft());
+                Console.WriteLine(root.GetValue().ToString() + " ");
+                InOrder(root.GetRight());
+            }
+        }
+
+        static void PostOrder(TreeNode<string> root)  //get left node first followed by right node and then root
+        {
+            if (root != null)
+            {
+                PostOrder(root.GetLeft());
+                PostOrder(root.GetRight());
+                Console.WriteLine(root.GetValue().ToString() + " ");
+            }
+        }
+
+        //static bool IsBalanced(TreeNode<string> root)  //Still needs to be troubleshooted 
+        //{
+        //    int diff = 0;
+
+        //    if((root.GetLeft() != null && root.GetRight() == null) || (root.GetLeft() == null && root.GetRight() != null))
+        //    {
+        //        diff += 1;
+        //    }
+        //    else
+        //    {
+        //        diff = 0;
+        //    }
+
+        //    return IsBalanced(root.GetLeft()) && IsBalanced(root.GetRight());
+        //}
+
     }
     public class Program<T> 
     {
