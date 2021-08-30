@@ -608,13 +608,20 @@ namespace UdemyCompleteCsharp11
                 Vertices[i] = new Node();
             }
         }
+        public void AddEdge(Node source, Node destination)
+        {
+            source.Neighbors.Add(destination);
+            destination.Neighbors.Add(source);
+        }
+
+        public void RemoveEdge(Node source, Node destination)
+        {
+            source.Neighbors.Remove(destination);
+            destination.Neighbors.Remove(source);
+        }
     }
 
-    public void AddEdge(Node source, Node destination)
-    {
-        source.Neighbors.Add(destination);
-        destination.Neighbors.Add(source);
-    }
+
 }
 
 
