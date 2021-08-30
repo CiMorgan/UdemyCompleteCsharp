@@ -462,126 +462,159 @@ namespace UdemyCompleteCsharp11
     //}
 
     //Trees
+    //class Example
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        TreeNode<string> a = new TreeNode<string>("a");
+    //        TreeNode<string> b = new TreeNode<string>("b");
+    //        TreeNode<string> c = new TreeNode<string>("c");
+    //        //TreeNode<string> d = new TreeNode<string>("d");
+    //        //TreeNode<string> e = new TreeNode<string>("e");
+    //        //TreeNode<string> f = new TreeNode<string>("f");
+    //        //TreeNode<string> g = new TreeNode<string>("g");
+
+    //        a.SetLeft(b);
+    //        a.SetRight(c);
+    //        //b.SetLeft(d);
+    //        //c.SetLeft(e);
+    //        //e.SetLeft(f);
+    //        //e.SetRight(g);
+
+    //        //PreOrder(a);
+    //        //InOrder(a);
+    //        //PostOrder(a);
+    //        Console.WriteLine(IsBalanced(a));
+
+    //        //Console.WriteLine(Program<string>.GetHeight(a));
+    //    }
+    //    static void PreOrder(TreeNode<string> root)  //get root first followed by left node and right node
+    //    {
+    //        if(root != null)
+    //        {
+    //            Console.WriteLine(root.GetValue().ToString() + " ");
+    //            PreOrder(root.GetLeft());
+    //            PreOrder(root.GetRight());
+    //        }
+    //    }
+
+    //    static void InOrder(TreeNode<string> root)  //get left node first followed by root and right node
+    //    {
+    //        if (root != null)
+    //        {
+    //            InOrder(root.GetLeft());
+    //            Console.WriteLine(root.GetValue().ToString() + " ");
+    //            InOrder(root.GetRight());
+    //        }
+    //    }
+
+    //    static void PostOrder(TreeNode<string> root)  //get left node first followed by right node and then root
+    //    {
+    //        if (root != null)
+    //        {
+    //            PostOrder(root.GetLeft());
+    //            PostOrder(root.GetRight());
+    //            Console.WriteLine(root.GetValue().ToString() + " ");
+    //        }
+    //    }
+
+    //    static bool IsBalanced(TreeNode<string> root)  //Still needs to be troubleshooted 
+    //    {
+    //        int diff = 0;
+
+    //        if ((root.GetLeft() != null && root.GetRight() == null) || (root.GetLeft() == null && root.GetRight() != null))
+    //        {
+    //            diff += 1;
+    //        }
+    //        else
+    //        {
+    //            diff = 0;
+    //        }
+
+    //        return IsBalanced(root.GetLeft()) && IsBalanced(root.GetRight());
+    //    }
+
+    //}
+    //public class Program<T> 
+    //{
+    //    public static int GetHeight(TreeNode<T> root)
+    //    {
+    //        if(root==null) { return 0; }
+    //        return Math.Max(GetHeight(root.GetLeft()), GetHeight(root.GetRight()) + 1);
+    //    }     
+    //}
+    //public class TreeNode<T>  //T is a place holder for the type (int, string) of node
+    //{
+    //    T value;
+    //    TreeNode<T> left = null;
+    //    TreeNode<T> right = null;
+
+    //    public TreeNode(T value)
+    //    {
+    //        this.value = value;
+    //    }
+    //    public TreeNode<T> GetLeft()
+    //    {
+    //        return left;
+    //    }
+    //    public TreeNode<T> GetRight()
+    //    {
+    //        return right;
+    //    }
+    //    public T GetValue()
+    //    {
+    //        return value;
+    //    }
+    //    public void SetValue(T value)
+    //    {
+    //        this.value = value;
+    //    }
+    //    public void SetRight(TreeNode<T> node)
+    //    {
+    //        right = node;
+    //    }
+    //    public void SetLeft(TreeNode<T> node)
+    //    {
+    //        left = node;
+    //    }
+
+
+    //}
     class Example
     {
         public static void Main(string[] args)
         {
-            TreeNode<string> a = new TreeNode<string>("a");
-            TreeNode<string> b = new TreeNode<string>("b");
-            TreeNode<string> c = new TreeNode<string>("c");
-            //TreeNode<string> d = new TreeNode<string>("d");
-            //TreeNode<string> e = new TreeNode<string>("e");
-            //TreeNode<string> f = new TreeNode<string>("f");
-            //TreeNode<string> g = new TreeNode<string>("g");
 
-            a.SetLeft(b);
-            a.SetRight(c);
-            //b.SetLeft(d);
-            //c.SetLeft(e);
-            //e.SetLeft(f);
-            //e.SetRight(g);
 
-            //PreOrder(a);
-            //InOrder(a);
-            //PostOrder(a);
-            Console.WriteLine(IsBalanced(a));
-
-            //Console.WriteLine(Program<string>.GetHeight(a));
         }
-        static void PreOrder(TreeNode<string> root)  //get root first followed by left node and right node
-        {
-            if(root != null)
-            {
-                Console.WriteLine(root.GetValue().ToString() + " ");
-                PreOrder(root.GetLeft());
-                PreOrder(root.GetRight());
-            }
-        }
-
-        static void InOrder(TreeNode<string> root)  //get left node first followed by root and right node
-        {
-            if (root != null)
-            {
-                InOrder(root.GetLeft());
-                Console.WriteLine(root.GetValue().ToString() + " ");
-                InOrder(root.GetRight());
-            }
-        }
-
-        static void PostOrder(TreeNode<string> root)  //get left node first followed by right node and then root
-        {
-            if (root != null)
-            {
-                PostOrder(root.GetLeft());
-                PostOrder(root.GetRight());
-                Console.WriteLine(root.GetValue().ToString() + " ");
-            }
-        }
-
-        //static bool IsBalanced(TreeNode<string> root)  //Still needs to be troubleshooted 
-        //{
-        //    int diff = 0;
-
-        //    if((root.GetLeft() != null && root.GetRight() == null) || (root.GetLeft() == null && root.GetRight() != null))
-        //    {
-        //        diff += 1;
-        //    }
-        //    else
-        //    {
-        //        diff = 0;
-        //    }
-
-        //    return IsBalanced(root.GetLeft()) && IsBalanced(root.GetRight());
-        //}
-
     }
-    public class Program<T> 
+    class Node
     {
-        public static int GetHeight(TreeNode<T> root)
-        {
-            if(root==null) { return 0; }
-            return Math.Max(GetHeight(root.GetLeft()), GetHeight(root.GetRight()) + 1);
-        }     
+        public List<object> Neighbors { get; set; }
     }
-    public class TreeNode<T>  //T is a place holder for the type (int, string) of node
+
+    class Graph
     {
-        T value;
-        TreeNode<T> left = null;
-        TreeNode<T> right = null;
+        public int NumberOfVertices { get; set; }
+        public List<Node> Vertices { get; set; }
 
-        public TreeNode(T value)
+        public Graph(int size)
         {
-            this.value = value;
-        }
-        public TreeNode<T> GetLeft()
-        {
-            return left;
-        }
-        public TreeNode<T> GetRight()
-        {
-            return right;
-        }
-        public T GetValue()
-        {
-            return value;
-        }
-        public void SetValue(T value)
-        {
-            this.value = value;
-        }
-        public void SetRight(TreeNode<T> node)
-        {
-            right = node;
-        }
-        public void SetLeft(TreeNode<T> node)
-        {
-            left = node;
-        }
+            NumberOfVertices = size;
+            Vertices = new List<Node>();
 
-
+            for(int i=0; i < NumberOfVertices; i++)
+            {
+                Vertices[i] = new Node();
+            }
+        }
     }
 
-
+    public void AddEdge(Node source, Node destination)
+    {
+        source.Neighbors.Add(destination);
+        destination.Neighbors.Add(source);
+    }
 }
 
 
