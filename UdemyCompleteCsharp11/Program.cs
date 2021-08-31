@@ -580,73 +580,108 @@ namespace UdemyCompleteCsharp11
 
 
     //}
+    //class Example
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        Node one = new Node(1);
+    //        Node two = new Node(2);
+    //        Node three = new Node(3);
+    //        Node four = new Node(4);
+    //        Node five = new Node(5);
+    //        Node six = new Node(6);
+
+    //        Graph graph = new Graph(6);
+
+    //        graph.AddEdge(six, four);
+    //        graph.AddEdge(four, five);
+    //        graph.AddEdge(five, two);
+    //        graph.AddEdge(two, three);
+    //        graph.AddEdge(four, three);
+    //        graph.AddEdge(five, one);
+    //        graph.AddEdge(two, one);
+    //    }
+    //}
+    //class Node
+    //{
+    //    public List<object> Neighbors { get; set; }
+    //    public int Data;
+
+    //    public Node(int data)
+    //    {
+    //        Data = data;
+    //    }
+
+    //}
+
+    //class Graph
+    //{
+    //    public int NumberOfVertices { get; set; }
+    //    public List<Node> Vertices { get; set; }
+
+    //    public Graph(int size)
+    //    {
+    //        NumberOfVertices = size;
+    //        Vertices = new List<Node>();
+
+    //        for(int i=0; i < NumberOfVertices; i++)
+    //        {
+    //            Vertices[i] = new Node();
+    //        }
+    //    }
+    //    public void AddEdge(Node source, Node destination)
+    //    {
+    //        source.Neighbors.Add(destination);
+    //        destination.Neighbors.Add(source);
+    //    }
+
+    //    public void RemoveEdge(Node source, Node destination)
+    //    {
+    //        source.Neighbors.Remove(destination);
+    //        destination.Neighbors.Remove(source);
+    //    }
+
+    //    public bool IsAdjacent(Node node1, Node node2)
+    //    {
+    //        return node1.Neighbors.Contains(node2);
+    //    }
+    //}
     class Example
     {
         public static void Main(string[] args)
         {
-            Node one = new Node(1);
-            Node two = new Node(2);
-            Node three = new Node(3);
-            Node four = new Node(4);
-            Node five = new Node(5);
-            Node six = new Node(6);
 
-            Graph graph = new Graph(6);
 
-            graph.AddEdge(six, four);
-            graph.AddEdge(four, five);
-            graph.AddEdge(five, two);
-            graph.AddEdge(two, three);
-            graph.AddEdge(four, three);
-            graph.AddEdge(five, one);
-            graph.AddEdge(two, one);
         }
     }
-    class Node
-    {
-        public List<object> Neighbors { get; set; }
-        public int Data;
-
-        public Node(int data)
-        {
-            Data = data;
-        }
-
-    }
-
     class Graph
     {
-        public int NumberOfVertices { get; set; }
-        public List<Node> Vertices { get; set; }
+        bool[,] adjacencyMatrix;
+        int NumberOfVertices { get; set; }
 
         public Graph(int size)
         {
             NumberOfVertices = size;
-            Vertices = new List<Node>();
-
-            for(int i=0; i < NumberOfVertices; i++)
-            {
-                Vertices[i] = new Node();
-            }
-        }
-        public void AddEdge(Node source, Node destination)
-        {
-            source.Neighbors.Add(destination);
-            destination.Neighbors.Add(source);
+            adjacencyMatrix = new bool[size, size];
         }
 
-        public void RemoveEdge(Node source, Node destination)
+        public void AddEdge (int i, int j)
         {
-            source.Neighbors.Remove(destination);
-            destination.Neighbors.Remove(source);
+            adjacencyMatrix[i, j] = true;
+            adjacencyMatrix[j, i] = true;
         }
 
-        public bool IsAdjacent(Node node1, Node node2)
+        public void RemoveEdge(int i, int j)
         {
-            return node1.Neighbors.Contains(node2);
+            adjacencyMatrix[i, j] = false;
+            adjacencyMatrix[j, i] = false;
+        }
+
+        public bool IsAdjacent(int i, int j)
+        {
+            return adjacencyMatrix[i, j];
         }
     }
-
 
 }
 
