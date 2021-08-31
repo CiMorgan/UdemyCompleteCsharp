@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "rV2CGgpyCljSwZpteXA+Q/5Bl+J1zwj68kwuJwWerH/RVhBsJVm9hj6bXPY6p+s89EzyCuZcy/Jjj8UkJNc9aA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\camor\\OneDrive\\Documents\\Computer Science\\Udemy\\UdemyCompleteCsharp\\UdemyCompleteCsharp12\\UdemyCompleteCsharp12.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\camor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyCompleteCsharp10", "Ud
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyCompleteCsharp10pt2", "UdemyCompleteCsharp10pt2\UdemyCompleteCsharp10pt2.csproj", "{AE969719-4EB5-4DA0-BDD1-91FF5F443DDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyCompleteCsharp11", "UdemyCompleteCsharp11\UdemyCompleteCsharp11.csproj", "{9DB49A22-D44A-43BA-BDE7-BAF0626383C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyCompleteCsharp11", "UdemyCompleteCsharp11\UdemyCompleteCsharp11.csproj", "{9DB49A22-D44A-43BA-BDE7-BAF0626383C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyCompleteCsharp12", "UdemyCompleteCsharp12\UdemyCompleteCsharp12.csproj", "{49B4424A-DC79-4FB0-B988-1A3BE8B7993D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{9DB49A22-D44A-43BA-BDE7-BAF0626383C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DB49A22-D44A-43BA-BDE7-BAF0626383C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DB49A22-D44A-43BA-BDE7-BAF0626383C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49B4424A-DC79-4FB0-B988-1A3BE8B7993D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49B4424A-DC79-4FB0-B988-1A3BE8B7993D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49B4424A-DC79-4FB0-B988-1A3BE8B7993D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49B4424A-DC79-4FB0-B988-1A3BE8B7993D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
