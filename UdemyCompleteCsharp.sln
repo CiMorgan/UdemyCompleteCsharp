@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Towers_Hanoi", "Towers_Hanoi\Towers_Hanoi.csproj", "{91F00F8E-F364-4154-8E4D-275E6642B480}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyCompleteCsharp13", "UdemyCompleteCsharp13\UdemyCompleteCsharp13.csproj", "{238E4C58-FC43-451E-AFFE-C68A353BB3FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{91F00F8E-F364-4154-8E4D-275E6642B480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{91F00F8E-F364-4154-8E4D-275E6642B480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{91F00F8E-F364-4154-8E4D-275E6642B480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{238E4C58-FC43-451E-AFFE-C68A353BB3FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238E4C58-FC43-451E-AFFE-C68A353BB3FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238E4C58-FC43-451E-AFFE-C68A353BB3FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238E4C58-FC43-451E-AFFE-C68A353BB3FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
