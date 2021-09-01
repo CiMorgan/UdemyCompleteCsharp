@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YhkFEwoLLHq8y8LlxPn+tOYmHMP2RXOq6mMwC0Gt9DPTezPE0Xp3OE6DzmLKgTbLpdYLqqAvouzXuG+613vdTA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\camor\\OneDrive\\Documents\\Computer Science\\Udemy\\UdemyCompleteCsharp\\Towers_Hanoi\\Towers_Hanoi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\camor\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.13\\microsoft.netcore.app.host.win-x64.3.1.13.nupkg.sha512"
+  ],
+  "logs": []
+}
