@@ -1,4 +1,5 @@
 ﻿using System;
+using Log = System.Diagnostics.Debug;    //alias for longer namespace
 
 namespace UdemyCompleteCsharp14
 {
@@ -6,7 +7,9 @@ namespace UdemyCompleteCsharp14
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            System.Diagnostics.Debug.WriteLine("Hello World!");
+            Log.WriteLine("Hi!");  //alias made code shorter
+
         }
     }
 }
