@@ -33,6 +33,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UdemyCompleteCsharp13", "Ud
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyCompleteCsharp14", "UdemyCompleteCsharp14\UdemyCompleteCsharp14.csproj", "{79BDBC9D-A461-4A6A-BA20-E6616484A98B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdemyCompleteCsharp15", "UdemyCompleteCsharp15\UdemyCompleteCsharp15.csproj", "{3D9D5FCB-E270-48C2-BAA6-35EF9FFA2F38}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{79BDBC9D-A461-4A6A-BA20-E6616484A98B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79BDBC9D-A461-4A6A-BA20-E6616484A98B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79BDBC9D-A461-4A6A-BA20-E6616484A98B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D9D5FCB-E270-48C2-BAA6-35EF9FFA2F38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D9D5FCB-E270-48C2-BAA6-35EF9FFA2F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D9D5FCB-E270-48C2-BAA6-35EF9FFA2F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D9D5FCB-E270-48C2-BAA6-35EF9FFA2F38}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
