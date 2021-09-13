@@ -64,6 +64,5 @@ namespace UdemyCompleteCsharp15
             return a / b;
         }
 
-
     }
 }
