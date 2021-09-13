@@ -1,0 +1,13 @@
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp13.exe
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp13.deps.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp13.runtimeconfig.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp13.runtimeconfig.dev.json
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp13.dll
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\bin\Debug\netcoreapp3.1\UdemyCompleteCsharp13.pdb
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp13.csprojAssemblyReference.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp13.AssemblyInfoInputs.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp13.AssemblyInfo.cs
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp13.csproj.CoreCompileInputs.cache
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp13.dll
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp13.pdb
+C:\Users\camor\OneDrive\Documents\Computer Science\Udemy\UdemyCompleteCsharp\UdemyCompleteCsharp13\obj\Debug\netcoreapp3.1\UdemyCompleteCsharp13.genruntimeconfig.cache
